@@ -1,0 +1,499 @@
+id	internalId	name	year	obligatory	copies
+0	0	Aprendizaje Reflexivo en la Educación Superior	2008	1	6
+1	0	Ser Estratégico y Autónomo Aprendiendo	2001	1	7
+2	0	FISICA	2016	1	16
+3	0	Manual de Radiología para Técnicos: Física, Biología y Protección Radiológica	2013	0	2
+4	0	Física para Ciencias de la Vida	1996	0	27
+5	0	Química	2017	1	49
+6	0	Curso de Química General T1 T2	2006	0	1
+7	0	Química General	2003	0	22
+8	0	Química Orgánica	1998	0	1
+9	0	Langman Embriología Médica	2016	1	5
+10	0	Embriología Clínica	2013	1	8
+11	0	Anatomía con orientación Clínica	2013	1	17
+12	0	Prometheus: Texto y Atlas de Anatomía T. 1-2-3	2015	1	15
+13	0	Gray Anatomía para Estudiantes	2015	0	18
+14	0	Anatomía Clínica	2017	0	2
+15	0	Anatomía Humana Descriptiva, Topográfica y Funcional T. 1-2-3-4	2005	0	24
+16	0	Prometheus Anatomía Manual para el Estudiante	2015	0	5
+17	0	Atlas de Anatomía Humana	2014	0	11
+18	0	Sobotta: Atlas de Anatomía Humana T.1-2-3-4	2012	0	20
+19	0	Atlas de anatomía con correlación clínica T.1 Aparato Locomotor	2008	0	1
+20	0	Atlas de Anatomía Humana: Estudio Fotográfico del Cuerpo Humano	2015	0	5
+21	0	Anatomy for Diagnostic Imaging	2011	0	2
+22	0	Netter Anatomía Radiológica Esencial	2015	0	2
+23	0	Atlas de Anatomía Humana por Técnicas de Imagen	2017	0	2
+24	0	Introducción a la Biología Celular	2011	1	5
+25	0	Biología Molecular y Celular	2011	1	5
+26	0	Biología Molecular de la Célula	2016	0	10
+27	0	Biología Celular Biomédica	2015	0	2
+28	0	Genética Médica	2016	0	2
+29	0	Biología Celular y Molecular	2016	0	8
+30	0	Lehninger's Principles of Biochemistry (en español)	2015	0	17
+31	0	Genética en Medicina	2016	0	2
+32	0	Genética: Un Enfoque Conceptual	2015	0	5
+33	0	Genética Médica: lo esencial de un vistazo	2015	0	5
+34	0	Historia de la Medicina y Humanidades Médicas	2012	1	5
+35	0	Psychology and Sociology Applied to Medicine	2009	0	5
+36	0	Historia de la Medicina Chilena	1995	0	2
+37	0	Guyton y Hall. Tratado de Fisiología Médica	2016	1	32
+38	0	Fisiología Respiratoria: Fundamentos	2016	1	9
+39	0	Fisiología Renal de Vander (Inglés)	2013	1	5
+40	0	Ganong Fisiología Médica	2016	1	11
+41	0	Fisiología	2014	0	18
+42	0	Molecular Cell Biology (español)	2016	1	8
+43	0	Lehninger's Principles of Biochemistry (en español)	2015	1	17
+44	0	Biochemistry	2011	1	5
+45	0	Harper Bioquímica Ilustrada	2016	0	5
+46	0	Genética Médica	2016	0	2
+47	0	Genética: Un Enfoque Conceptual	2015	0	5
+48	0	Genética Médica: Lo Esencial de un Vistazo	2015	0	5
+49	0	Anatomía con Orientación Clínica	2013	1	36
+50	0	Prometheus: Texto y Atlas de Anatomía T1-2-3	2015	1	15
+51	0	Gray Anatomía para Estudiantes	2015	0	18
+52	0	Embriología Clínica	2013	0	8
+53	0	Anatomía Clínica	2017	0	2
+54	0	Técnicas de la Comunicación y Relación de Ayuda en Ciencias de la Salud	2014	1	8
+55	0	Comunicación Clínica: principios y habilidades para la práctica	2014	1	5
+56	0	Communication in Nursing	2017	0	2
+57	0	La Comunicación. Una Competencia Esencial para los Profesionales de la Salud	2006	0	2
+58	0	The Medical Interview: The Three Function Approach	2014	0	2
+59	0	Comunicación Médico-Paciente: reflexiones para un cambio de modelo	2012	0	2
+60	0	La Comunicación con el Paciente: habilidades emocionales para los profesionales de la salud	2014	0	5
+61	0	Teoría de la Comunicación Humana: interacciones y paradojas	1997	0	2
+62	0	Face2Face. Starter Workbook with Key	2013	1	10
+63	0	New Headway. Beginner Student's Book	2013	1	10
+64	0	Essential Grammar in Use: A Self-Study Reference and Practice Book for Elementary Learners of English	2015	1	18
+65	0	Manual Washington de Procedimientos Clínicos	2017	1	5
+66	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-Aprendizaje Centrada en la Persona	2013	0	10
+67	0	Bates Guía de Exploración Física e Historia Clínica	2013	0	5
+68	0	Compendio de Anamnesis y Exploración Física	2014	0	2
+69	0	Técnicas de la Comunicación y Relación de Ayuda en Ciencias de la Salud	2014	0	8
+70	0	La Comunicación. Una Competencia Esencial para los Profesionales de la Salud	2006	0	2
+71	0	The Medical Interview: The Three Function Approach	2014	0	2
+72	0	McLeod Exploración Clínica	2014	0	5
+73	0	Semiología Médica	2018	0	12
+74	0	La Comunicación con el Paciente: habilidades emocionales para los profesionales de la salud	2014	0	5
+75	0	Noguer-Balcells Exploración Clínica Práctica	2016	0	5
+76	0	Enfermería Medicoquirúrgica Brunner y Suddarth	2016	0	21
+77	0	Guyton y Hall. Tratado de Fisiología Médica	2016	1	32
+78	0	Gastrointestinal Physiology	2014	1	4
+79	0	Fisiología Médica de Ganong	2016	0	11
+80	0	Fisiología	2014	0	18
+81	0	Endocrine and Reproductive Physiology	2013	0	4
+82	0	Atlas en Color y Texto de Histología	2015	1	15
+83	0	Histología: texto y atlas. Correlación con Biología Celular y Molecular	2015	1	22
+84	0	Principles of Neural Science	2013	0	5
+85	0	Histología y Biología Celular: introducción a la anatomía patológica	2016	0	2
+86	0	Junqueira's Basic Histology: Text &  Atlas (español)	2015	0	4
+87	0	Sobotta Histología	2013	0	5
+88	0	Geneser Histología	2016	0	5
+89	0	Atlas de Histología y Organografía Microscópica	2010	0	5
+90	0	Wheater's Functional Histology: A Text and Colour Atlas	2014	0	5
+91	0	Metodología de la Investigación Cientifíca y Bioestadística. Para Profesionales y Estudiantes de Ciencias de la Salud	2009	1	19
+92	0	Metodología de la Investigación	2014	0	25
+93	0	Metodología de la Investigación Cualitativa	1999	0	4
+94	0	Face2Face. Starter Workbook with Key	2013	1	10
+95	0	New Headway. Beginner Student's Book	2013	1	10
+96	0	Essential Grammar in Use: A Self-Study Reference and Practice Book for Elementary Learners of English	2015	1	18
+97	0	The Medical Interview: The Three Function Approach	2014	0	2
+98	0	Psicología Médica	2015	0	2
+99	0	Neurociencia Cognitiva	2015	0	1
+100	0	Harrison Principios de Medicina Interna T1-2	2016	0	28
+101	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+102	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+103	0	Porth Fisiopatología. Alteraciones de la Salud. Conceptos Básicos	2014	0	1
+104	0	Davidson's Principles & Practice of Medicine	2014	0	5
+105	0	Manual de Patología General. Sisinio de Castro	2013	0	5
+106	0	Rapid Review Pathology	2014	0	2
+107	0	Rubin y Strayer Patología. Fundamentos Clinicopatológicos en Medicina	2017	0	10
+108	0	Pathology BRS	2014	0	2
+109	0	Bates Guía de Exploración Física e Historia Clínica	2013	1	5
+110	0	Semiología Médica	2018	1	12
+111	0	Core Radiology	2013	1	15
+112	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-aprendizaje centrada en la persona	2013	0	10
+113	0	Compendio de Anamnesis y Exploración Física	2014	0	2
+114	0	McLeod Exploración Clínica	2014	0	5
+115	0	ECG en la Práctica	2014	0	5
+116	0	ECG Fácil	2014	0	5
+117	0	Radiología Básica: Aspectos Fundamentales	2016	0	8
+118	0	Making Sence of the ECG: A Hands-On Guide	2014	0	5
+119	0	Harrison Principios de Medicina Interna T1-2	2016	0	28
+120	0	Manual de Razonamiento Clínico	2011	0	1
+121	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+122	0	DeGowin's Diagnostic Examination	2015	0	2
+123	0	Evidence Based Physical Diagnosis	2018	0	5
+124	0	Mosby's Diagnostic & Laboratory Test Reference	2012	0	2
+125	0	Manual de Patología General. Sisinio de Castro	2013	0	5
+126	0	Exploración Clínica Práctica de Noguer-Balcells	2016	0	5
+127	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+128	0	Rubin's Pathology: Clínicopathological Foundations of Medicine (español)	2017	0	10
+129	0	Semiología Médica y Técnica Exploratoria	2011	0	2
+130	0	Textbook of Physical Diagnosis: History and Examination (5 en español)	2014	0	7
+131	0	Principios de Neurociencia: Aplicaciones Básicas y Clínicas	2013	1	8
+132	0	Principles of Neural Science	2013	1	5
+133	0	Neurociencia: La Exploración del Cerebro	2016	0	2
+134	0	Barr: El Sistema Nervioso Humano Una Perspectiva Anatómica	2014	0	1
+135	0	Neuroanatomía Clínica: Texto y Atlas	2015	0	8
+136	0	Texto y Atlas de Anatomía Prometheus T.III	2015	0	5
+137	0	Goodman & Gilman. Las Bases Farmacológicas de la Terapéutica	2012	1	8
+138	0	Farmacología Humana	2014	1	8
+139	0	Manual de Washington de Terapéutica Médica	2017	0	10
+140	0	Principios de Farmacología: Bases Fisiopatológicas del Tratamiento Farmacológico	2017	0	2
+141	0	Velázquez Farmacología Básica y Clínica	2008	0	5
+142	0	Rang y Dale Farmacología	2016	0	2
+143	0	Farmacología Básica y Clínica	2016	0	5
+144	0	Farmacología LIR	2016	0	2
+145	0	Inmunología Celular y Molecular	2015	1	15
+146	0	Jawetz, Melnick & Adelberg Microbiología Médica	2016	1	10
+147	0	Mandell, Douglas y Bennett Enfermedades Infecciosas: Principios y Práctica V.1-2	2016	1	10
+148	0	Microbiología Médica	2017	1	15
+149	0	Biostatistics: The Bare Essential	2014	1	5
+150	0	Psicopatología y Semiologia Psiquiátrica	2016	1	10
+151	0	Sims Síntomas Mentales: Manual de Psicopatología Descriptiva	2016	0	2
+152	0	Psychiatric Interviewing: The Art of Understanding	2017	0	1
+153	0	Introducción a la Psicopatología y a la Psiquiatría	2015	0	5
+154	0	Manual Diagnóstico y Estadístico de los Trastornos Mentales DSM5	2014	0	5
+155	0	Harrison Principios de Medicina Interna T1-2	2016	0	28
+156	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+157	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+158	0	Davidson's Principles and Practice of Medicine	2014	0	5
+159	0	Rapid Review Pathology	2014	0	2
+160	0	Pathology BRS	2014	0	2
+161	0	Rubin's Pathology: Clínico-Pathological Foundations of Medicine (español)	2017	0	10
+162	0	Bates Guía de Exploración Física e Historia Clínica	2013	1	5
+163	0	Semiología Médica	2018	1	12
+164	0	Core Radiology	2013	1	15
+165	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-aprendizaje centrada en la persona	2013	0	10
+166	0	Compendio de Anamnesis y Exploración Física	2014	0	2
+167	0	McLeod Exploración Clínica	2014	0	5
+168	0	ECG en la Práctica	2014	0	5
+169	0	ECG Fácil	2014	0	5
+170	0	Radiología Básica: Aspectos Fundamentales	2016	0	8
+171	0	Making Sence of the ECG: A Hands-On Guide	2014	0	5
+172	0	Harrison Principios de Medicina Interna T1-2	2016	0	28
+173	0	Manual de Razonamiento Clínico	2011	0	1
+174	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+175	0	DeGowin's Diagnostic Examination	2015	0	2
+176	0	Evidence-Based Physical Diagnosis	2018	0	5
+177	0	Mosby's Diagnostic and Laboratory Test Reference	2012	0	2
+178	0	Manual de Patología General. Sisinio de Castro	2013	0	5
+179	0	Exploración Clínica Práctica de Noguer-Balcells	2016	0	5
+180	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+181	0	Rubin's Pathology: Clínico-Pathological Foundations of Medicine (español)	2017	0	10
+182	0	Textbook of Physical Diagnosis: History and Examination (5 en español)	2014	0	7
+183	0	Goodman & Gilman. Las Bases Farmacológicas de la Terapéutica	2012	1	8
+184	0	Farmacología Humana	2014	1	8
+185	0	Manual Washington de Terapéutica Médica	2017	0	10
+186	0	Principios de Farmacología: Bases Fisiopatológicas del Tratamiento Farmacológico	2017	0	2
+187	0	Velázquez Farmacología Básica y Clínica	2008	0	5
+188	0	Rang y Dale Farmacología	2016	0	2
+189	0	Farmacología Básica y Clínica	2016	0	5
+190	0	Farmacología LIR	2016	0	2
+191	0	"Infectious Diseases Essentials: Principles and practice of Infectious Diseases (español)	2016	1	10
+192	0	Microbiología Médica Jawetz, Melnick y Adelberg	2016	1	10
+193	0	Microbiología Médica	2017	1	15
+194	0	Inmunología Celular y Molecular	2015	0	15
+195	0	Epidemiología	2014	1	14
+196	0	Epidemiología Clínica: Investigación Clínica Aplicada	2015	1	7
+197	0	Epidemiología Clínica	2016	0	8
+198	0	Diseño de Investigaciones Clínicas	2014	0	2
+199	0	Medicina Basada en la Evidencia (inglés)	2019	0	5
+200	0	Medicina de Urgencias y Emergencias. Guía Diagnóstica y Protocolos de Actuación	2014	1	5
+201	0	Cirugía: Fundamentos para la Práctica Clínico-Quirúrgica	2014	1	3
+202	0	Essential Surgery: Problems, Diagnosis and Management	2014	1	5
+203	0	Clinical Medicine	2017	1	5
+204	0	Oxford Handbook of Clinical Medicine	2017	1	5
+205	0	Core Radiology	2013	1	15
+206	0	ECG Fácil	2014	1	5
+207	0	Mosby's Diagnostic and Laboratory Test Reference	2012	1	2
+208	0	Manual de Urgencias Medicoquirúrgicas	2013	0	2
+209	0	Compendio de Medicina de Urgencias: Guía Terapéutica de Bolsillo	2017	0	5
+210	0	Manual de Urgencias	2016	0	9
+211	0	Principios de Cirugía de Schwartz	2015	0	5
+212	0	Fundamentos del Cuidado Quirúrgico	2011	0	2
+213	0	Semiología Quirúrgica	2016	0	5
+214	0	Complicaciones en Cirugía General	2011	0	1
+215	0	Sabiston Textbook of Surgery: The Biological Basis of Modern Surgical Practice	2017	0	5
+216	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-aprendizaje centrada en la persona	2013	0	10
+217	0	Essentials of Kumar and Clark's Clinical Medicine	2018	0	5
+218	0	The Washington Manual of Medical Therapeutics (español)	2017	0	10
+219	0	Bates Guía de Exploración Física e Historia Clínica	2013	0	5
+220	0	Exploración Clínica de McLeod	2014	0	5
+221	0	Semiología Médica 	2018	0	12
+222	0	Harrison Principios de Medicina Interna T1-2	2016	0	28
+223	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+224	0	Velázquez Farmacología Básica y Clínica	2008	0	5
+225	0	Evidence Based Physical Diagnosis	2018	0	5
+226	0	Manual de Patología General. Sisinio de Castro	2013	0	5
+227	0	Exploración Clínica Práctica de Noguer-Balcells	2016	0	5
+228	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+229	0	Semiología Médica y Técnica Exploratoria	2001	0	2
+230	0	Davidson's Principles and Practice of Medicine	2014	0	5
+231	0	ECG en la Práctica	2014	0	5
+232	0	Radiología Básica: Aspectos Fundamentales	2016	0	8
+233	0	Making Sence of the ECG: A Hands-On Guide	2014	0	5
+234	0	Clinical Medicine	2017	1	5
+235	0	Neurology and Neurosurgery Illustrated	2010	1	5
+236	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-aprendizaje centrada en la persona	2013	0	10
+237	0	Bates Guía de Exploración Física e Historia Clínica	2013	0	5
+238	0	McLeod Exploración Clínica	2014	0	5
+239	0	Harrison's Principles of Internal Medicine (español) T1-2	2015	0	28
+240	0	Manual de Práctica Clínica	2014	0	5
+241	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+242	0	Oxford Handbook of Clinical Medicine	2017	0	5
+243	0	Evidence Based Physical Diagnosis	2018	0	5
+244	0	Exploración Clínica Práctica de Noguer-Balcells	2016	0	5
+245	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+246	0	Rubin's Pathology: Clínico-Pathological Foundations of Medicine (español)	2017	0	10
+247	0	Semiología Médica y Técnica Exploratoria	2001	0	2
+248	0	Davidson's Principles and Practice of Medicine	2014	0	5
+249	0	Principios de Neurociencia: Aplicaciones Básicas y Clínicas	2013	0	8
+250	0	Neurología Fundamental	2016	0	4
+251	0	Psychiatric Interviewing: The Art of Understanding	2017	0	1
+252	0	Introducción a la Psicopatología y a la Psiquiatría	2015	0	5
+253	0	Manual Diagnóstico y Estadístico de los Trastornos Mentales DSM5	2014	0	5
+254	0	Basic Epidemiology	2006	1	5
+255	0	Medicina Preventiva y Salud Pública de Piédrola Gil	2015	1	6
+256	0	Face2Face. Starter Workbook whith Key	2013	1	10
+257	0	New Headway. Beginner Student's Book	2013	1	10
+258	0	Essential Grammar in Use: A Self-Study Reference and Practice Book for Elementary Learners of English	2015	1	18
+259	0	Medicina de Urgencias y Emergencias. Guía Diagnóstica y Protocolos de Actuación	2014	1	5
+260	0	Cirugía: Fundamentos para la Práctica Clínico-Quirúrgica	2014	1	3
+261	0	Essential Surgery: Problems, Diagnosis and Management	2014	1	5
+262	0	Clinical Medicine	2017	1	5
+263	0	Oxford Handbook of Clinical Medicine	2017	1	5
+264	0	Core Radiology	2013	1	15
+265	0	ECG Fácil	2014	1	5
+266	0	Mosby's Diagnostic and Laboratory Test Reference	2012	1	2
+267	0	Manual de Urgencias Medicoquirúrgicas	2013	0	2
+268	0	Compendio de Medicina de Urgencias: Guía Terapéutica de Bolsillo	2017	0	5
+269	0	Manual de Urgencias	2016	0	9
+270	0	Principios de Cirugía de Schwartz	2015	0	5
+271	0	Fundamentos del Cuidado Quirúrgico	2011	0	2
+272	0	Semiología Quirúrgica	2016	0	5
+273	0	Complicaciones en Cirugía General	2011	0	1
+274	0	Sabiston Textbook of Surgery: The Biological Basis of Modern Surgical Practice	2017	0	5
+275	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-aprendizaje centrada en la persona	2013	0	10
+276	0	Essentials of Kumar and Clark's Clinical Medicine	2018	0	5
+277	0	The Washington Manual of Medical Therapeutics (español)	2017	0	10
+278	0	Bates Guía de Exploración Física e Historia Clínica	2013	0	5
+279	0	Exploración Clínica de McLeod	2014	0	5
+280	0	Semiología Médica 	2018	0	12
+281	0	Harrison Principios de Medicina Interna T1-2	2016	0	28
+282	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+283	0	Velázquez Farmacología Básica y Clínica	2008	0	5
+284	0	Evidence Based Physical Diagnosis	2018	0	5
+285	0	Manual de Patología General. Sisinio de Castro	2013	0	5
+286	0	Exploración Clínica Práctica de Noguer-Balcells	2016	0	5
+287	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+288	0	Semiología Médica y Técnica Exploratoria	2001	0	2
+289	0	Davidson's Principles and Practice of Medicine	2014	0	5
+290	0	ECG en la Práctica	2014	0	5
+291	0	Radiología Básica: Aspectos Fundamentales	2016	0	8
+292	0	Making Sence of the ECG: A Hands-On Guide	2014	0	5
+293	0	Diagnóstico y Tratamiento en Ortopedia	2014	1	4
+294	0	Tratado de Nutrición	2010	1	4
+295	0	Nutriguía: Manual de Nutrición Clínica	2015	1	4
+296	0	Metodología de la Investigación	2014	1	25
+297	0	Estadística para Biología y Ciencias de la Salud	2001	1	3
+298	0	Face2Face. Starter Workbook whith Key	2013	1	10
+299	0	New Headway. Beginner Student's Book	2013	1	10
+300	0	Essential Grammar in Use: A Self-Study Reference and Practice Book for Elementary Learners of English	2015	1	18
+301	0	Medicina de Urgencias y Emergencias. Guía Diagnóstica y Protocolos de Actuación	2014	1	5
+302	0	Cirugía: Fundamentos para la Práctica Clínico-Quirúrgica	2014	1	3
+303	0	Clinical Medicine	2017	1	5
+304	0	Oxford Handbook of Clinical Medicine	2017	1	5
+305	0	Core Radiology	2013	1	15
+306	0	ECG Fácil	2014	1	5
+307	0	Mosby's Diagnostic and Laboratory Test Reference	2012	1	2
+308	0	Manual de Urgencias Medicoquirúrgicas	2013	0	2
+309	0	Compendio de Medicina de Urgencias: Guía Terapéutica de Bolsillo	2017	0	5
+310	0	Manual de Urgencias	2016	0	9
+311	0	Principios de Cirugía de Schwartz	2015	0	5
+312	0	Fundamentos del Cuidado Quirúrgico	2011	0	2
+313	0	Semiología Quirúrgica	2016	0	5
+314	0	Complicaciones en Cirugía General	2011	0	1
+315	0	Sabiston Textbook of Surgery: The Biological Basis of Modern Surgical Practice	2017	0	5
+316	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-aprendizaje centrada en la persona	2013	0	10
+317	0	Essentials of Kumar and Clark's Clinical Medicine	2018	0	5
+318	0	The Washington Manual of Medical Therapeutics (español)	2017	0	10
+319	0	Bates Guía de Exploración Física e Historia Clínica	2013	0	5
+320	0	Exploración Clínica de McLeod	2014	0	5
+321	0	Semiología Médica 	2018	0	12
+322	0	Harrison Principios de Medicina Interna T1-2	2016	0	28
+323	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+324	0	Velázquez Farmacología Básica y Clínica	2008	0	5
+325	0	Evidence Based Physical Diagnosis	2018	0	5
+326	0	Manual de Patología General. Sisinio de Castro	2013	0	5
+327	0	Exploración Clínica Práctica de Noguer-Balcells	2016	0	5
+328	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+329	0	Semiología Médica y Técnica Exploratoria	2001	0	2
+330	0	Davidson's Principles and Practice of Medicine	2014	0	5
+331	0	ECG en la Práctica	2014	0	5
+332	0	Radiología Básica: Aspectos Fundamentales	2016	0	8
+333	0	Making Sence of the ECG: A Hands-On Guide	2014	0	5
+334	0	Dermatología Esencial	2010	1	1
+335	0	Evidence Based Physical Diagnosis	2018	0	5
+336	0	Exploración Clínica Práctica de Noguer-Balcells	2016	0	5
+337	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+338	0	Semiología Médica y Técnica Exploratoria	2001	0	2
+339	0	Davidson's Principles and Practice of Medicine	2014	0	5
+340	0	Diseño de Investigaciones Clínicas	2014	1	2
+341	0	Publicación Científica Biomédica: Cómo escribir y publicar un artículo de investigación	2016	1	3
+342	0	Métodos de Investigación Clínica y Epidemiológica	2013	0	7
+343	0	Fundamentos de Metodología de la Investigación	2014	0	3
+344	0	Epidemiología Clínica: Investigación Clínica Aplicada	2015	0	7
+345	0	Medicina Basada en la Evidencia (inglés)	2019	0	5
+346	0	Medicina Preventiva y Salud Pública de Piédrola Gil	2015	1	5
+347	0	Fundamentos del Cuidado Quirúrgico	2011	0	2
+348	0	Salud Laboral: Conceptos y Técnicas para la Prevención de Riesgos Laborales	2013	1	1
+349	0	Diagnóstico y Tratamiento en Medicina Laboral y Ambiental	2015	1	12
+350	0	Valoración de la Incapacidad Laboral	2013	0	2
+351	0	Diseño de Investigaciones Clínicas	2014	1	2
+352	0	Publicación Científica Biomédica: Cómo escribir y publicar un artículo de investigación	2016	1	3
+353	0	Fundamentos de Metodología de la Investigación	2014	0	3
+354	0	Epidemiología Clínica: Investigación Clínica Aplicada	2015	0	7
+355	0	Medicina Basada en la Evidencia (inglés)	2019	0	5
+356	0	Atención Primaria. Principos, Organización y Métodos en Medicina de Familia	2014	1	2
+357	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-aprendizaje centrada en la persona	2013	0	10
+358	0	Essentials of Kumar and Clark's Clinical Medicine	2018	0	5
+359	0	The Washington Manual of Medical Therapeutics (español)	2017	0	10
+360	0	Bates Guía de Exploración Física e Historia Clínica	2013	0	5
+361	0	Fundamentos del Cuidado Quirúrgico	2011	0	2
+362	0	Exploración Clínica de McLeod	2014	0	5
+363	0	Cirugía: Fundamentos para la Práctica Clínico-Quirúrgica	2014	0	3
+364	0	Semiología Médica 	2018	0	12
+365	0	Radiología Básica: Aspectos Fundamentales	2016	0	8
+366	0	Making Sence of the ECG: A Hands-On Guide	2014	0	5
+367	0	Compendio de Medicina de Urgencias: Guía Terapéutica de Bolsillo	2017	0	5
+368	0	Harrison Principios de Medicina Interna T1-2	2016	0	28
+369	0	Clinical Medicine	2017	0	5
+370	0	Oxford Handbook of Clinical Medicine	2017	0	5
+371	0	Core Radiology	2013	0	15
+372	0	Evidence Based Physical Diagnosis	2018	0	5
+373	0	Mosby's Diagnostic and Laboratory Test Reference	2012	0	2
+374	0	Essential Surgery: Problems, Diagnosis and Management	2014	0	5
+375	0	Davidson's Principles and Practice of Medicine	2014	0	5
+376	0	Obstetricia y Ginecología	2014	0	3
+377	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-aprendizaje centrada en la persona	2013	0	10
+378	0	Essentials of Kumar and Clark's Clinical Medicine	2018	0	5
+379	0	The Washington Manual of Medical Therapeutics (español)	2017	0	10
+380	0	Bates Guía de Exploración Física e Historia Clínica	2013	0	5
+381	0	Principios de Cirugía de Schwartz	2015	0	5
+382	0	Fundamentos del Cuidado Quirúrgico	2011	0	2
+383	0	Semiología Quirúrgica	2016	0	5
+384	0	Manual de Urgencias Medicoquirúrgicas	2013	0	2
+385	0	Exploración Clínica de McLeod	2014	0	5
+386	0	Cirugía: Fundamentos para la Práctica Clínico-Quirúrgica	2014	0	3
+387	0	Semiología Médica 	2018	0	12
+388	0	ECG en la Práctica	2014	0	5
+389	0	ECG Fácil	2014	0	5
+390	0	Radiología Básica: Aspectos Fundamentales	2016	0	8
+391	0	Making Sence of the ECG: A Hands-On Guide	2014	0	5
+392	0	Medicina de Urgencias y Emergencias: Guía Diagnóstica y Protocolos de Actuación	2014	0	5
+393	0	Compendio de Medicina de Urgencias: Guía Terapéutica de Bolsillo	2017	0	5
+394	0	Harrison Principios de Medicina Interna T1-2	2016	0	28
+395	0	Clinical Medicine	2017	0	5
+396	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+397	0	Oxford Handbook of Clinical Medicine	2017	0	5
+398	0	Velázquez Farmacología Básica y Clínica	2008	0	5
+399	0	Core Radiology	2013	0	15
+400	0	Evidence Based Physical Diagnosis	2018	0	5
+401	0	Mosby's Diagnostic and Laboratory Test Reference	2012	0	2
+402	0	Exploración Clínica Práctica de Noguer-Balcells	2016	0	5
+403	0	Essential Surgery: Problems, Diagnosis and Management	2014	0	5
+404	0	Manual de Urgencias	2016	0	9
+405	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+406	0	Semiología Médica y Técnica Exploratoria	2001	0	2
+407	0	Davidson's Principles and Practice of Medicine	2014	0	5
+408	0	Sabiston Textbook of Surgery: The Biological Basis of Modern Surgical Practice	2017	0	5
+409	0	Medicina de Urgencias y Emergencias: Guía Diagnóstica y Protocolos de Actuación	2014	1	5
+410	0	Clinical Medicine	2017	1	5
+411	0	Harrison Principios de Medicina Interna T1-2	2016	1	28
+412	0	Oxford Handbook of Clinical Medicine	2017	1	5
+413	0	ECG Fácil	2014	1	5
+414	0	Core Radiology	2013	1	15
+415	0	Mosby's Diagnostic and Laboratory Test Reference	2012	1	2
+416	0	Manual de Urgencias Medicoquirúrgicas	2013	0	2
+417	0	Compendio de Medicina de Urgencias: Guía Terapéutica de Bolsillo	2017	0	5
+418	0	Manual de Urgencias	2016	0	9
+419	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-aprendizaje centrada en la persona	2013	0	10
+420	0	Essentials of Kumar and Clark's Clinical Medicine	2018	0	5
+421	0	Manual Washington de Terapéutica Médica	2017	0	10
+422	0	Bates Guía de Exploración Física e Historia Clínica	2013	0	5
+423	0	Exploración Clínica de McLeod	2014	0	5
+424	0	Velázquez Farmacología Básica y Clínica	2008	0	5
+425	0	Semiología Médica 	2018	0	12
+426	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+427	0	Evidence Based Physical Diagnosis	2018	0	5
+428	0	Manual de Patología General. Sisinio de Castro	2013	0	5
+429	0	Exploración Clínica Práctica de Noguer-Balcells	2016	0	5
+430	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+431	0	Semiología Médica y Técnica Exploratoria	2001	0	2
+432	0	Davidson's Principles and Practice of Medicine	2014	0	5
+433	0	ECG en la Práctica	2014	0	5
+434	0	Radiología Básica: Aspectos Fundamentales	2016	0	8
+435	0	Making Sence of the ECG: A Hands-On Guide	2014	0	5
+436	0	Sim's Síntomas Mentales: Manual de Psicopatología Descriptiva	2016	0	2
+437	0	Psychiatric Interviewing: The Art of Understanding	2017	0	1
+438	0	Introducción a la Psicopatología y a la Psiquiatría	2015	0	5
+439	0	Manual Diagnóstico y Estadístico de los Trastornos Mentales DSM-5	2014	0	5
+440	0	Essential Anesthesia: from Science to Practice	2011	1	5
+441	0	Medicina de Urgencias y Emergencias: Guía Diagnóstica y Protocolos de Actuación	2014	1	5
+442	0	Cirugía: Fundamentos para la Práctica Clínico-Quirúrgica	2014	1	3
+443	0	Essential Surgery: Problems, Diagnosis and Management	2014	1	5
+444	0	ECG Fácil	2014	1	5
+445	0	Core Radiology	2013	1	15
+446	0	Mosby's Diagnostic and Laboratory Test Reference	2012	1	2
+447	0	Manual de Urgencias Medicoquirúrgicas	2013	0	2
+448	0	Compendio de Medicina de Urgencias: Guía Terapéutica de Bolsillo	2017	0	5
+449	0	Manual de Urgencias	2016	0	9
+450	0	Principios de Cirugía de Schwartz	2015	0	5
+451	0	Fundamentos del Cuidado Quirúrgico	2011	0	2
+452	0	Semiología Quirúrgica	2016	0	5
+453	0	Sabiston Textbook of Surgery: The Biological Basis of Modern Surgical Practice	2017	0	5
+454	0	ECG en la Práctica	2014	0	5
+455	0	Radiología Básica: Aspectos Fundamentales	2016	0	8
+456	0	Making Sence of the ECG: A Hands-On Guide	2014	0	5
+457	0	Alto Riesgo Obstétrico	2013	1	18
+458	0	Obstetricia y Ginecología	2014	0	3
+459	0	Atención Primaria. Principios, Organización y Métodos en Medicina de Familia	2014	1	2
+460	0	Salud Pública y Medicina Preventiva	2014	0	6
+461	0	Semiología Médica: Fisiopatología, Semiotecnia y Propedéutica. Enseñanza-aprendizaje centrada en la persona	2013	0	10
+462	0	Essentials of Kumar and Clark's Clinical Medicine	2018	0	5
+463	0	Manual Washington de Terapéutica Médica	2017	0	10
+464	0	Bates Guía de Exploración Física e Historia Clínica	2013	0	5
+465	0	Fundamentos del Cuidado Quirúrgico	2011	0	2
+466	0	Principios de Cirugía de Schwartz	2015	0	5
+467	0	Manual de Urgencias Medicoquirúrgicas	2013	0	2
+468	0	Semiología Quirúrgica	2016	0	5
+469	0	Exploración Clínica de McLeod	2014	0	5
+470	0	Velázquez Farmacología Básica y Clínica	2008	0	5
+471	0	Cirugía: Fundamentos para la Práctica Clínico-Quirúrgica	2014	0	3
+472	0	Semiología Médica 	2018	0	12
+473	0	ECG en la Práctica	2014	0	5
+474	0	ECG Fácil	2014	0	8
+475	0	Radiología Básica: Aspectos Fundamentales	2016	0	8
+476	0	Making Sence of the ECG: A Hands-On Guide	2014	0	5
+477	0	Medicina de Urgencias y Emergencias: Guía Diagnóstica y Protocolos de Actuación	2014	0	5
+478	0	Compendio de Medicina de Urgencias: Guía Terapéutica de Bolsillo	2017	0	5
+479	0	Harrison Principios de Medicina Interna T1-2	2016	0	28
+480	0	Clinical Medicine	2017	0	5
+481	0	Introducción a la Medicina Clínica: Fisiopatología y Semiología	2015	0	2
+482	0	Oxford Handbook of Clinical Medicine	2017	0	5
+483	0	Velázquez Farmacología Básica y Clínica	2008	0	5
+484	0	Core Radiology	2013	0	15
+485	0	Evidence Based Physical Diagnosis	2018	0	5
+486	0	Mosby's Diagnostic and Laboratory Test Reference	2012	0	2
+487	0	Exploración Clínica Práctica de Noguer-Balcells	2016	0	5
+488	0	Essential Surgery: Problems, Diagnosis and Management	2014	0	5
+489	0	Manual de Urgencias	2016	0	9
+490	0	Medicina Interna de Farreras Rozman T1-2	2016	0	12
+491	0	Semiología Médica y Técnica Exploratoria	2001	0	2
+492	0	Sabiston Textbook of Surgery: The Biological Basis of Modern Surgical Practice	2017	0	5
+493	0	Davidson's Principles and Practice of Medicine	2014	0	5
+494	0	Manual Harriet Lane de Pediatría	2018	0	5
+495	0	Nelson Tratado de Pediatría T1-2	2016	0	18
+496	0	Pediatría de Meneghello T1-2	2013	0	32
+497	0	Manual Washington de Pediatría	2017	0	5

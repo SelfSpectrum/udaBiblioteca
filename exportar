@@ -1,0 +1,88 @@
+#!/bin/bash
+
+# Para obtener todas las direcciones de los archivos de cobertura
+declare -a cobertura
+verb=false
+
+# Función que captura los archivos de cobertura de manera recursiva
+Capture() {
+	for file in "$1"/*; do
+		if [ -d "$file" ]; then
+			Capture "$file"
+		elif [ -f "$file" ]; then
+			cobertura+=("$file")
+			if [ "$verb" == true ]; then
+				echo "Captured \"$file\""
+			fi
+		fi
+	done
+}
+Usage() {
+cat << EOF
+modo de uso: exportar [OPCIÓN]
+Permite la automatización del proceso de creación y filtración de la base de datos para la biblioteca de la UDA.
+
+  -v	--verbose	Verbaliza con mayor detalle los pasos realizados
+  -d			Destruye los elementos dentro de la carpeta 'data'
+  -e			Exporta todos los elementos dentro de 'cobertura'
+  -c			Captura todos los archivos dentro de 'data' para recopilarlos
+  -h	--help		Muestra esta ayuda
+
+ Ejemplo:
+  exportar -d -e	Elimina todos los elementos actuales de la carpeta data para empezar a exportar todos los achivos desde cero
+EOF
+}
+
+while [ $# -gt 0  ]; do
+	case $1 in
+		-v | --verbose)
+			verb=true
+			;;
+		-d)
+			# Elimino archivos de exportaciones anteriores
+			rm -r data/*.csv
+			;;
+		-e)
+			# Llamo la función partiendo desde el directorio "coberturas"
+			Capture "./cobertura"
+
+			# 
+			for captura in "${cobertura[@]}"; do
+				if [ "$verb" == true ]; then
+					echo "Exporting data from $captura"
+				fi
+				soffice --convert-to csv:"Text - txt - csv (StarCalc)":9,34,UTF8,1,,0,false,true,false,false,false,-1 "$captura"
+			done
+			if [ "$verb" == true ]; then
+				echo "Conversion complete. CSV files are in the current directory."
+			fi
+
+			mv *.csv data
+
+			cobertura=()
+			Capture "./data"
+			datos=("${cobertura[@]}")
+
+			for i in "${!cobertura[@]}"; do
+				cobertura[$i]="${cobertura[$i]// /-}"
+				if [[ "${datos[$i]}" != "${cobertura[$i]}" ]]; then
+					mv -f "${datos[$i]}" "${cobertura[$i]}"
+				fi
+			done
+			;;
+		-c)
+			cobertura=()
+			Capture "./data"
+			python3 compile.py "${cobertura[@]}"
+			;;
+		-h | --help)
+			Usage
+			;;
+		*)
+			echo "Bandera no reconocida."
+			Usage
+			exit 1
+			;;
+	esac
+	shift
+done
