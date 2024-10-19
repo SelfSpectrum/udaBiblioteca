@@ -15,8 +15,8 @@ def AppendLibro(file : str) -> None:
                 data : list[str] = i.split('\t')
                 count = sum(1 if j == '' or ''.join(j.split(' ')).lower() in keys else 0 for j in data)
                 if (count > 2): continue
-                #Id, N. Library, Name, Year, Obligatory, Copies
-                book.write('\t'.join([str(idBook), '0', data[3], data[5], '1' if data[2] == 'OBLIGATORIA:' else '0', '0' if data[7] == '' else data[7]]) + '\n')
+                #Id, N. Library, Name, Year, Edition, Obligatory, Copies
+                book.write('\t'.join([str(idBook), '0', data[3], data[5], '0', '1' if data[2] == 'OBLIGATORIA:' else '0', '0' if data[7] == '' else data[7]]) + '\n')
                 #Id, Name, Subject, Semester
                 career.write('\t'.join([str(idCareer), 'medicina', data[0], data[1]]) + '\n')
                 #Id Career, Id Book
@@ -29,15 +29,16 @@ def AppendLibro(file : str) -> None:
                 idAuthor += 1
                 idBook += 1
     else:
-        with open(file, 'r') as load, open('libroOld.csv', 'a') as libro:
+        with open(file, 'r') as load, open('../libroOld.csv', 'a') as libro:
             for i in load:
                 data : list[str] = i.split('\t')
                 filtrado : str = ''
                 if data[-1] in estudiantes:
                     filtrado = '\t'.join(k for j, k in enumerate(data) if j != 4)
                 elif data[-1] in fechas:
-                    filtrado = '\t'.join([data[0], data[1], data[2] + '|' + data[7], data[3], data[4], data[5], data[6]])
-                else: filtrado = i
+                    filtrado = '\t'.join([data[0], data[1] if data[1] != '' else '0', data[2] + '|' + data[7], data[3], data[4], data[5], data[6]])
+                else: filtrado = '\t'.join([j if j != '' else '0' for j in i.split('\t')])
+                data = i[:-1:].split('\t')
                 res : str = filtrado[:-1:] + '\t' + file.split('-')[0].split('/')[2] + '\n'
                 libro.write(res)
 def CleanFile(file : str) -> None:
@@ -55,10 +56,10 @@ def CleanFile(file : str) -> None:
 
 def Main():
     argv.pop(0)
-    with open('libroOld.csv', 'w') as libro, open('final/author.csv', 'w') as author, open('final/book.csv', 'w') as book, open('final/career.csv', 'w') as career, open('final/authorBook.csv', 'w') as authorBook, open('final/careerBook.csv', 'w') as careerBook, open('final/theme.csv', 'w') as theme, open('final/themeBook.csv', 'w') as themeBook:
+    with open('../libroOld.csv', 'w') as libro, open('final/author.csv', 'w') as author, open('final/book.csv', 'w') as book, open('final/career.csv', 'w') as career, open('final/authorBook.csv', 'w') as authorBook, open('final/careerBook.csv', 'w') as careerBook, open('final/theme.csv', 'w') as theme, open('final/themeBook.csv', 'w') as themeBook:
         libro.write('asignatura\tsemestre\tdetalle\ttipoBibliografia\tcopias\tid\tdisponibilidad\tcarrera\n')
         author.write('id\tname\n')
-        book.write('id\tinternalId\tname\tyear\tobligatory\tcopies\n')
+        book.write('id\tinternalId\tname\tyear\tedition\tobligatory\tcopies\n')
         career.write('id\tname\tsubject\tsemester\n')
         authorBook.write('idAuthor\tidBook\n')
         careerBook.write('idCareer\tidBook\n')
@@ -68,7 +69,7 @@ def Main():
         if 'libros' in i.lower() or 'bibliografía' in i.lower():
             print(i)
             AppendLibro(i)
-    CleanFile('libroOld.csv')
+    CleanFile('../libroOld.csv')
 
 if __name__ == '__main__':
     Main()

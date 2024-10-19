@@ -73,7 +73,13 @@ while [ $# -gt 0  ]; do
 		-c)
 			cobertura=()
 			Capture "./data"
-			python3 compile.py "${cobertura[@]}"
+			python3 scripts/1eraCompil.py "${cobertura[@]}"
+			;;
+		-cc)
+			cobertura=()
+			Capture "./data"
+			python3 scripts/1eraCompil.py "${cobertura[@]}"
+			python3 scripts/2daCompil.py
 			;;
 		-h | --help)
 			Usage
