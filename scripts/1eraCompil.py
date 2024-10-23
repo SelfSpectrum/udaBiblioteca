@@ -2,11 +2,9 @@ from sys import argv
 from os import system
 
 def AppendLibro(file : str) -> None:
-    estudiantes : str = 'edfisicageologiakinesiologiaingles'
-    fechas : str = 'minas'
-    nice : str= 'medicina'
-    if nice in file:
-        keys = 'asignaturasemestredetalledebibliografíatipodebibliografiacantidaddecopiasdisponiblesenbibliotecanrodebib#disponibilidadprestamos0bibbiblioteca'
+    keys = 'asignaturasemestredetalledebibliografíatipodebibliografiacantidaddecopiasdisponiblesenbibliotecanrodebib#disponibilidadprestamos0bibbiblioteca'
+    flag : bool = True;
+    if 'medicina' in file:
         with open(file, 'r') as load, open('final/book.csv', 'a+') as book, open('final/author.csv', 'a+') as author, open('final/authorBook.csv', 'a+') as authorBook, open('final/career.csv', 'a+') as career, open('final/careerBook.csv', 'a+') as careerBook:
             idBook = 0
             idAuthor = 0
@@ -31,14 +29,34 @@ def AppendLibro(file : str) -> None:
     else:
         with open(file, 'r') as load, open('./libroOld.csv', 'a') as libro:
             for i in load:
-                data : list[str] = i.split('\t')
+                career : str = file.split('-')[0].split('/')[2]
+                cstr : str = career.strip().lower()
+                data : list[str] = i.strip('\n').split('\t')
+                count = sum(1 if j == '' or ''.join(j.split(' ')).lower() in keys else 0 for j in data)
+                if (count > 3): continue
+
                 filtrado : str = ''
-                if data[-1] in estudiantes:
+                if cstr in 'edfisicageologiakinesiologiaparvularia':
                     filtrado = '\t'.join(k for j, k in enumerate(data) if j != 4)
-                elif data[-1] in fechas:
+                elif cstr == 'minas':
                     filtrado = '\t'.join([data[0], data[1] if data[1] != '' else '0', data[2] + '|' + data[7], data[3], data[4], data[5], data[6]])
+                elif cstr == 'basicaingles':
+                    filtrado = '\t'.join([data[0], data[1], data[2], data[3], data[5], data[6], '1'])
+                elif cstr == 'psicologia':
+                    filtrado = '\t'.join([data[0], data[1], data[2], data[4], data[5], data[6], '1'])
+                elif cstr == 'tecnicoindustrial':
+                    filtrado = '\t'.join([data[0], '0', data[1], data[2], data[3], data[4], data[5]])
+                elif cstr == 'tecnicomecanica':
+                    filtrado = '\t'.join([data[0], data[1], data[2], data[3], str(int(data[5]) + int(data[6])), data[4], '1'])
                 else: filtrado = i
-                res : str = '\t'.join(['0' if j == '' else j for j in filtrado.rstrip('\n').split('\t')]) + '\t' + file.split('-')[0].split('/')[2] + '\n'
+
+                res : str = '\t'.join(['0' if j == '' else j for j in filtrado.split('\t')]) + '\t' + career + '\n'
+
+                if flag:
+                    print(cstr)
+                    print(sum([1 for j in res.split('\t')]))
+                    print(res)
+                    flag = False
                 libro.write(res)
 def CleanFile(file : str) -> None:
     keys = 'asignaturasemestredetalledebibliografíatipodebibliografiacantidaddecopiasdisponiblesenbibliotecanrodebib#disponibilidadprestamos0bibbiblioteca'
