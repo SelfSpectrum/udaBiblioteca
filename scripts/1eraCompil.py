@@ -36,17 +36,18 @@ def AppendLibro(file : str) -> None:
                 if (count > 3): continue
 
                 filtrado : str = ''
-                if cstr in 'edfisicageologiakinesiologiaparvularia':
+                if cstr in 'edfisicageologiakinesiologiaparvulariatraductologia':
                     filtrado = '\t'.join(k for j, k in enumerate(data) if j != 4)
                 elif cstr == 'minas':
-                    filtrado = '\t'.join([data[0], data[1] if data[1] != '' else '0', data[2] + '|' + data[7], data[3], data[4], data[5], data[6]])
-                elif cstr == 'basicaingles':
+                    filtrado = '\t'.join([data[0], data[1] if data[1] != '' else '0', data[2] + '|' + data[7], data[3], data[4], data[5], 'a'])
+                elif cstr in 'basicaingles':
                     filtrado = '\t'.join([data[0], data[1], data[2], data[3], data[5], data[6], '1'])
                 elif cstr == 'psicologia':
                     filtrado = '\t'.join([data[0], data[1], data[2], data[4], data[5], data[6], '1'])
-                elif cstr == 'tecnicoindustrial':
-                    filtrado = '\t'.join([data[0], '0', data[1], data[2], data[3], data[4], data[5]])
-                elif cstr == 'tecnicomecanica':
+                elif cstr in 'vtecnicoindustrialvtecnicoadmin':
+                    filtrado = '\t'.join([data[0], '0', data[2], data[3], data[4], data[5], '1'])
+                elif cstr == 'vtecnicomecanica':
+                    print(data)
                     filtrado = '\t'.join([data[0], data[1], data[2], data[3], str(int(data[5]) + int(data[6])), data[4], '1'])
                 else: filtrado = i
 
