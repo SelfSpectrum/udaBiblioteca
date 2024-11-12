@@ -1,3 +1,11 @@
+-----------------------------------
+
+Para empezar a trabajar, recordar que el elemento clave para que funcionen las partes automatizadas es un script de shell para Bash, por lo que se recomienda el uso de linux para mayor confort. Escribe para empezar:
+
+```sh
+exportar -h
+```
+
 ## Progreso en la migración de los datos de Biblioteca
 
 ### E1: Migración de XLSX a CSV
