@@ -1,499 +1,1140 @@
 id	name
 0	Brockbank, A.,
-1	Font, C.M., Mir, E.B., Badia, M.C.
-2	Kane, J. W., & Sternheim, M. M.
-3	Bushong, S.
-4	Cromer, A.
-5	Chang, Raymond; Goldsby, Ken
-6	Santamaría, F.
-7	Petrucci, R. H., Harwood, W. S., Herring, F. G., & Pardo, C.
-8	Morrison, R. T., & Boyd, R. N.
-9	Sandler. TW.
-10	Moore et al.
-11	Moore y Dalley.
-12	Schünke et al.
-13	Drake et al.
-14	Pró E.
-15	Rouvière & Delmas.
-16	Anne M. Gilroy et al.
-17	Frank H. Netter
-18	Paulsen y Waschke
-19	Platzer W.
-20	Rohen et al.
-21	Ryan et al.
-22	Weber et al.
-23	Weir y Abrahams
-24	Alberts et al.
-25	Chandar & Viselli.
-26	Alberts et al.
-27	Alfonso Calvo
-28	Jorde et al.
-29	Lodish et al.
-30	Nelson & Cox
-31	Nussbaum et al.
-32	Pierce, BA.
-33	Pritchard & Korf
-34	Sánchez González, MA.
-35	Alder et al.
-36	Cruz-Coke Madrid R.
-37	Hall, J. E.
-38	West. J. B.
-39	Eaton, D. C., & Pooler, J.P.
-40	Barrett, K. E.
-41	Constanzo, L .S.
-42	Lodish, H.
-43	Nelson & Cox
-44	Voet, D. L.
-45	Murray, R. K., Bender, D. A. Botham, K. M., Kennelly, P. J.
-46	Jorde, L. B., Carey, J. C., & Bamshad, M. J.
-47	Pierce, B. A.
-48	Pritchard, D., J., & Korf, B. R.
-49	Moore, K.L., Dalley
-50	Schünke et al.
-51	Drake et al.
-52	Moore et al.
-53	Pró
-54	Cibanal J. et al.
-55	Ruiz M.
-56	Balzey-R.
-57	Cleries X.
-58	Cole & Bird
-59	Gelabert A.
-60	Merayo P. et al.
-61	Watzawick P.
-62	Cunningham G., Redston
-63	Maris A., Soars L.
-64	Murphy R.
-65	Freer J.
-66	Argente y Alvarez
-67	Bickley, L.S.
-68	Cardellach et al.
-69	Cibanal J. et al.
-70	Cleries X.
-71	Cole & Bird
-72	Douglas et al.
-73	Goic et al.
-74	Merayo P. et al.
-75	Valtueña, JMP
-76	Smeltzer et al.
-77	Hall, J.
-78	Johnson, L.
-79	Barrett, e.a.
-80	Constanzo, L
-81	White, Bruce A., Porterfield, Susan P.
-82	Gartner - Hiatt
-83	Ross & Pawlina
-84	Kandel et al.
-85	Kierszenbaum & Tres
-86	Junqueira
-87	Welsch, U.
-88	Brüel. Christensen. Tranum-Jensen. Qvortrup. Geneser
-89	Boya, J.
-90	Young et al.
-91	Narváez, D.
-92	Hernández Sampieri, Roberto
-93	Ruiz, O.
-94	Redston, Chris. Cunningham Gillie 
-95	John & Liz Soars
-96	Murphy, Raymond
-97	Cole & Bird
-98	Díaz Méndez, Darío y Latorre Postigo, José Miguel
-99	Redolar D.
-100	Kasper, e.a.
-101	Laso Guzmán, F.
-102	López., R.
-103	Sheila Grossman, Carol Mattson Porth
-104	Walker, e.a.
-105	Perez Arellano, J. L.
-106	Goljan, E.
-107	Strayer, David S. Rubin, Emanuel
-108	Arthur S. Schneider. Philip A.Szanto
-109	Bickley
-110	Goic et al.
-111	Mandell, J
-112	Argente & Alvarez
-113	Cardellach, L. et al.
-114	Douglas et al.
-115	Hampton, J.
-116	Hampton, J.
-117	Herring, W.
-118	Houghton & Gray
-119	Kasper, e.a.
-120	Kassirer et al.
-121	Laso FJ.
-122	Leblond et al.
-123	McGee S.
-124	Pagana et al.
-125	Perez Arellano JL.
-126	Prieto Valtueña, J.M.
-127	Rozman & Cardellach, L.
-128	Stryer & Rubin
-129	Surós & Surós
-130	Swartz, MH
-131	Haines, D.
-132	Kandel, e.a.
-133	Bear, e.a.
-134	Kiernan, & R.
-135	Haines, D.
-136	Schünke, e. a.
-137	Laurence Brunton. Bruce Chabner
-138	Florez, e.a.
-139	Bhat, e.a.
-140	Golan, e.a.
-141	Lorenzo, e.a.
-142	Rang, e.a.
-143	Katzung, Bertram,Trevor
-144	Whalen, e.a.
-145	Abbas, Abul K., Lichtman, Andrew H.H., Pillai, Shiv.
-146	Karen C. Carroll et al
-147	John E. Bennett, Raphael Dolin, Martín J. Blaser
-148	Murray Patrick R., Rosenthal Ken S., P Faller Michael A.
-149	Streiner, David L.
-150	Ricardo Capponi Martínez
-151	Oyebode, Femi
-152	Shea, Shawn Christopher
-153	Vallejo Ruiloba J.
-154	VVAA
-155	Kasper, e.a.
-156	Laso, F.
-157	López., R.
-158	Walker, e.a.
-159	Goljan, E.
-160	Schneider, Arthur-Szanto, Philip
-161	Stryer & Rubin
-162	Bickley
-163	Goic et al.
-164	Mandell, J
-165	Argente & Alvarez
-166	Cardellach, L. et al.
-167	Douglas et al.
-168	Hampton, J.
-169	Hampton, J.
-170	Herring, W.
-171	Houghton & Gray
-172	Kasper, e.a.
-173	Kassirer et al.
-174	Laso FJ.
-175	Leblond et al.
-176	McGee S.
-177	Pagana et al.
-178	Perez Arellano JL.
-179	Valtueña, JMP
-180	Rozman & Cardellach, L.
-181	Stryer & Rubin
-182	Swartz, MH
-183	Brunton, e.a.
-184	Florez, e.a.
-185	Bhat, e.a.
-186	Golan, e.a.
-187	Lorenzo, e.a.
-188	Rang, e.a.
-189	Katzung, Bertram,Trevor
-190	Whalen, e.a.
-191	Mandell, Douglas and Bennet
-192	Carroll, e.a.
-193	Murray, e.a.
-194	Abbas, e.a.
-195	Gordis, L.
-196	Ruiz, M.
-197	Fletcher, e.a.
-198	Hulley, e.a.
-199	Straus, e.a.
-200	Jiménez Murillo y Montero Pérez
-201	Giménez, M.
-202	Quíck et al
-203	Kumar & Clark
-204	Ian Wilkinson
-205	Mandell, J.
-206	Hampton, J.
-207	Pagana et al
-208	Caimi y Caimi
-209	Jiménez Murillo y Montero Pérez
-210	Rivas Jiménez, M
-211	Brunicardi et al
-212	Burdiles, P.
-213	Carvajal, C.
-214	Espinoza R.
-215	Townsend et al
-216	Argente & Alvarez
-217	Nicola Zammit
-218	Bhat et al
-219	Bickley
-220	Douglas et al
-221	Goic et al
-222	Kasper, e.a.
-223	Laso, F.J.
-224	Lorenzo, e.a.
-225	McGee, S.
-226	Pérez Arellano, A.J.
-227	Prieto Valtueña, JM
-228	López., R.
-229	Surós y Surós
-230	Walker, e.a.
+1	Morata, López, N., & Cols
+2	Font, C.M., Mir, E.B., Badia, M.C.
+3	Devoe, P. H.
+4	Núñez, J. C., Solano, P., Antonio, J., & Pedro, G.
+5	Kane, J. W., & Sternheim, M. M.
+6	López, N., & y Cols.
+7	Aurengo, A., & Petitclerc, T.
+8	Bushong, S.
+9	Cromer, A.
+10	Davidovits, P.
+11	Frumento, A.
+12	Galle, P., & Paulin, R.
+13	Jou Mirabent, D.
+14	Mohammed, A. M.
+15	Chang, Raymond; Goldsby, Ken
+16	Bailey, P. S., & Bailey, C. A.
+17	McMurry, J.
+18	Santamaría, F.
+19	Petrucci, R. H., Harwood, W. S., Herring, F. G., & Pardo, C.
+20	Mahan, B. H., de Banchero, G. Y., & de Herold, L. P. E.
+21	Morrison, R. T., & Boyd, R. N.
+22	Sandler. TW.
+23	Moore et al.
+24	Moore y Dalley.
+25	Schünke et al.
+26	Drake et al.
+27	Federative Committe on Anatomical Terminology.
+28	Guzmán, L. et al.
+29	Pró E.
+30	Rouvière & Delmas.
+31	Anne M. Gilroy et al.
+32	Frank H. Netter
+33	Paulsen y Waschke
+34	Platzer W.
+35	Rohen et al.
+36	Ryan et al.
+37	Weber et al.
+38	Weir y Abrahams
+39	Alberts et al.
+40	Chandar & Viselli.
+41	Alberts et al.
+42	Berg et al.
+43	Alfonso Calvo
+44	Cooper & Hausman.
+45	Cox et al.
+46	Gersen & Keagle.
+47	Jorde et al.
+48	Lodish et al.
+49	Nelson & Cox
+50	Nussbaum et al.
+51	Pierce, BA.
+52	Pritchard & Korf
+53	Salazar Montes et al.
+54	Solari y Roubicek
+55	Watson et al.
+56	Hoffmann, L., Bradley, G., & Rosen, K.
+57	González Rosales, A.
+58	Larson, RE. Hostetler, RP. Edwars, BH
+59	Spivak, M
+60	Swokowski E. Cole J.
+61	Sánchez González, MA.
+62	Alder et al.
+63	Cruz-Coke Madrid R.
+64	Illanes MA.
+65	Illich, I.
+66	Jünger, E.
+67	Laín Entralgo, P.
+68	López Piñero & Terrada
+69	Porter, R.
+70	Riera J.
+71	Hall, J. E.
+72	West. J. B.
+73	Eaton, D. C., & Pooler, J.P.
+74	Barrett, K. E.
+75	Constanzo, L .S.
+76	Courneya, C. A. M., & Parker, M. J.
+77	Levitzky, M. G.
+78	Danziger, J., Zeidel, M., & Parker, M. J.
+79	Lodish, H.
+80	Nelson & Cox
+81	Voet, D. L.
+82	Berg, J. M., Tymoczko, J. L., & Stryer, L.
+83	Murray, R. K., Bender, D. A. Botham, K. M., Kennelly, P. J.
+84	Jorde, L. B., Carey, J. C., & Bamshad, M. J.
+85	Pierce, B. A.
+86	Pritchard, D., J., & Korf, B. R.
+87	Watson, J. D.
+88	Moore, K.L., Dalley
+89	Schünke et al.
+90	Drake et al.
+91	Federative Committe on Anatomical Terminology
+92	Guzman, L. et al.
+93	Moore et al.
+94	Pró
+95	Cibanal J. et al.
+96	Ruiz M.
+97	Balzey-R.
+98	Cleries X.
+99	Cole & Bird
+100	Fortin et al.
+101	Gelabert A.
+102	Glendinning & Holmstrom
+103	Kurtz et al.
+104	McCorry & Mason
+105	Merayo P. et al.
+106	Molinuevo A.
+107	Novack, D.
+108	Watzawick P.
+109	Cunningham G., Redston
+110	Maris A., Soars L.
+111	Marks J.
+112	Murphy R.
+113	Alexander, L.G.
+114	Murphy J.
+115	Freer J.
+116	Jamieson et. Al
+117	Argente y Alvarez
+118	Barr D.
+119	Bickley, L.S.
+120	Cardellach et al.
+121	Cibanal J. et al.
+122	Cleries X.
+123	Cole & Bird
+124	Douglas et al.
+125	Fortin et al.
+126	Goic et al.
+127	Jandial & Jandial
+128	Merayo P. et al.
+129	Valtueña, JMP
+130	Smeltzer et al.
+131	Sommers F.
+132	Sanchez, MA.
+133	Sapag-Hagar, M.
+134	Gracia, D.
+135	Ameneiros et al.
+136	Aristóteles
+137	Clavé E.
+138	Consejo General de los Colegios Oficiales de Médicos
+139	Couceiro A.
+140	Drane, J.
+141	Gómez, J.
+142	Herranz, G.
+143	Lolas, F.
+144	Ministerio de Salud
+145	Santos de Unamuno, C.
+146	Hall, J.
+147	Johnson, L.
+148	Molina, P.
+149	Barrett, e.a.
+150	Barrett, K.
+151	Constanzo, L
+152	Constanzo, L
+153	White, Bruce A., Porterfield, Susan P.
+154	Fortoul, Teresa
+155	Gartner - Hiatt
+156	Piezzine, R. & Fornes, M.
+157	Ross & Pawlina
+158	Kandel et al.
+159	Kierszenbaum & Tres
+160	Junqueira
+161	Paulsen, D.
+162	Welsch, U.
+163	Brüel. Christensen. Tranum-Jensen. Qvortrup. Geneser
+164	Montalvo, A.
+165	Boya, J.
+166	Martín-Lacave, I.
+167	Sobotta & cols
+168	Villaro, AC.
+169	Young et al.
+170	Ato, M.L.
+171	Bottasso, Oscar
+172	García, e.a.
+173	Narváez, D.
+174	Castañeda, JJ.
+175	Hernández Sampieri, Roberto
+176	Lemus, J.
+177	Ruiz, O.
+178	Soria-Aledo, V.
+179	Valles, M.
+180	Redston, Chris. Cunningham Gillie 
+181	John & Liz Soars
+182	Marks, Jonathan
+183	Murphy, Raymond
+184	Alexander, L.G.
+185	Murphy J.
+186	Murphy, R. & Altman, R.
+187	Cortese, Elisa
+188	De la Fuente
+189	Florenzano, R. y Zegers, B.
+190	Ruiz Moral R.
+191	Thambirajah M.
+192	Cole & Bird
+193	Coulehan
+194	Díaz Méndez, Darío y Latorre Postigo, José Miguel
+195	Fadem B.
+196	Gross R.
+197	Mosser & Begun
+198	Nolen-Hoeksema et al.
+199	Redolar D.
+200	Van Servellen, G.
+201	Gutierrez, I 
+202	Marañón, G.
+203	Pastrana, J.
+204	Buja, M.
+205	Edward, C. Klatt, R.
+206	Kemp, e.a.
+207	Kasper, e.a.
+208	Stefan Silbernagl, Florian Lang
+209	Laso Guzmán, F.
+210	López., R.
+211	McPhee., H.
+212	Sheila Grossman, Carol Mattson Porth
+213	Walker, e.a.
+214	Perez Arellano, J. L.
+215	Goljan, E.
+216	Kumar, e.a.
+217	Kumar, e.a.
+218	Pardo, M.
+219	Reisner
+220	Strayer, David S. Rubin, Emanuel
+221	Rubin., S.
+222	Stevens, A.
+223	Arthur S. Schneider. Philip A.Szanto
+224	Bickley
+225	Goic et al.
+226	Mandell, J
+227	Argente & Alvarez
+228	Cardellach, L. et al.
+229	Casado, V. et al.
+230	Douglas et al.
 231	Hampton, J.
-232	Herring, W.
-233	Houghton & Gray
-234	Kumar & Clark
-235	Lindsay & Bone
-236	Argente & Alvarez
-237	Bickley
-238	Douglas et al.
-239	Kasper et al
-240	Kumar y Clark
-241	Laso FJ.
-242	Ian Wilkinson
-243	McGee, S.
-244	Prieto Valtueña, JM
-245	López., R.
+232	Hampton, J.
+233	Herring, W.
+234	Houghton & Gray
+235	Kasper, e.a.
+236	Kassirer et al.
+237	Laposata, M.
+238	Laso FJ.
+239	Leblond et al.
+240	McGee S.
+241	Pagana et al.
+242	Perez Arellano JL.
+243	Prieto Valtueña, J.M.
+244	Rozman & Cardellach, L.
+245	Smith & Farrell
 246	Stryer & Rubin
-247	Surós y Surós
-248	Walker, e.a.
+247	Surós & Surós
+248	Swartz, MH
 249	Haines, D.
-250	Yañez, A.
-251	Shea CS.
-252	Vallejo Ruiloba J.
-253	VVAA
-254	Beaglehole & Bonita
-255	Gestal-Otero & Fernández-Crehuet
-256	Cunningham G., Redstone, C.
-257	Soars L.
-258	Murphy R.
-259	Jiménez Murillo y Montero Pérez
-260	Giménez, M.
-261	Quíck et al
-262	Kumar & Clark
-263	Ian Wilkinson
-264	Mandell, J.
-265	Hampton, J.
-266	Pagana et al
-267	Caimi y Caimi
-268	Jiménez Murillo y Montero Pérez
-269	Rivas Jiménez, M
-270	Brunicardi et al
-271	Burdiles, P.
-272	Carvajal, C.
-273	Espinoza R.
-274	Townsend et al
-275	Argente & Alvarez
-276	Nicola Zammit
-277	Bhat et al
-278	Bickley
-279	Douglas et al
-280	Goic et al
-281	Kasper, e.a.
-282	Laso, F.J.
-283	Lorenzo, e.a.
-284	McGee, S.
-285	Pérez Arellano, A.J.
-286	Prieto Valtueña, JM
-287	López., R.
-288	Surós y Surós
-289	Walker, e.a.
-290	Hampton, J.
-291	Herring, W.
-292	Houghton & Gray
-293	Skinner HB et al
-294	Gil Hernández, A.
-295	Requejo, A. & Ortega, O.
-296	Hernández, S. et al
-297	Milton, J. & Tsokos J.O.
-298	Cunningham G., Redstone, C.
-299	Soars L.
-300	Murphy R.
-301	Jiménez Murillo y Montero Pérez
-302	Giménez, M.
-303	Kumar & Clark
-304	Ian Wilkinson
-305	Mandell, J.
-306	Hampton, J.
-307	Pagana et al
-308	Caimi y Caimi
-309	Jiménez Murillo y Montero Pérez
-310	Rivas Jiménez, M
-311	Brunicardi et al
-312	Burdiles, P.
-313	Carvajal, C.
-314	Espinoza R.
-315	Townsend et al
-316	Argente & Alvarez
-317	Nicola Zammit
-318	Bhat et al
-319	Bickley
-320	Douglas et al
-321	Goic et al
-322	Kasper, e.a.
-323	Laso, F.J.
-324	Lorenzo, e.a.
-325	McGee, S.
-326	Pérez Arellano, A.J.
-327	Prieto Valtueña, JM
-328	López., R.
-329	Surós y Surós
-330	Walker, e.a.
-331	Hampton, J.
-332	Herring, W.
-333	Houghton & Gray
-334	Guarda & Gubelin
-335	McGee, S.
-336	Prieto Valtueña, JM
-337	López., R.
-338	Surós y Surós
-339	Walker, e.a.
-340	Hulley et al
-341	Jiménez Villa et al
-342	Argimón-Pallás y Jiménez-Villa
-343	Hernández-Sampieri et al
-344	Ruiz Morales & Gómez Restrepo
-345	Straus et al
-346	Gestal-Otero & Fernández-Crehuet
-347	Burdiles, P.
-348	Ruiz Frutos et al
-349	LaDou, J. & Harrison, R.
-350	Ojeda Gil, José A.
-351	Hulley et al
-352	Jiménez Villa et al
-353	Hernández-Sampieri et al
-354	Ruiz Morales & Gómez Restrepo
-355	Straus et al
-356	Martín, Z. et al
-357	Argente & Alvarez
-358	Nicola Zammit
-359	Bhat et al
-360	Bickley
-361	Burdiles, P.
-362	Douglas et al
-363	Giménez, M.
-364	Goic et al
-365	Herring, W.
-366	Houghton & Gray
-367	Jiménez Murillo y Montero Pérez
-368	Kasper, e.a.
-369	Kumar & Clark
-370	Ian Wilkinson
-371	Mandell, J.
-372	McGee, S.
-373	Pagana et al
-374	Quíck et al
-375	Walker, e.a.
-376	Beckmann et al
-377	Argente & Alvarez
-378	Nicola Zammit
-379	Bhat et al
-380	Bickley
-381	Brunicardi et al
-382	Burdiles, P.
-383	Carvajal, C.
-384	Caimi y Caimi
-385	Douglas et al
-386	Giménez, M.
-387	Goic et al
-388	Hampton, J.
-389	Hampton, J.
-390	Herring, W.
-391	Houghton & Gray
-392	Jiménez Murillo y Montero Pérez
-393	Jiménez Murillo y Montero Pérez
-394	Kasper, e.a.
-395	Kumar & Clark
-396	Laso, F.J.
-397	Ian Wilkinson
-398	Lorenzo, e.a.
-399	Mandell, J.
-400	McGee, S.
-401	Pagana et al
-402	Prieto Valtueña, JM
-403	Quíck et al
-404	Rivas Jiménez, M
-405	Rozman y Cardellach López
-406	Surós y Surós
-407	Walker, e.a.
-408	Townsend et al
-409	Jiménez Murillo y Montero Pérez
-410	Kumar & Clark
-411	Kasper, e.a.
-412	Ian Wilkinson
-413	Hampton, J.
-414	Mandell, J.
-415	Pagana et al
-416	Caimi y Caimi
-417	Jiménez Murillo y Montero Pérez
-418	Rivas Jiménez, M
-419	Argente & Alvarez
-420	Nicola Zammit
-421	Bhat et al
-422	Bickley
-423	Douglas et al
-424	Lorenzo, e.a.
-425	Goic et al
-426	Laso, F.J.
-427	McGee, S.
-428	Pérez Arellano, A.J.
-429	Prieto Valtueña, JM
-430	Rozman y Cardellach López
-431	Surós y Surós
-432	Walker, e.a.
-433	Hampton, J.
-434	Herring, W.
-435	Houghton & Gray
-436	Oyebode, F.
-437	Shea, C.
-438	Vallejo, R.J.
-439	VV.AA.
-440	Euliano & Gravenstein 
-441	Jiménez Murillo y Montero Pérez
-442	Giménez, M.
-443	Quíck et al
-444	Hampton, J.
-445	Mandell, J.
-446	Pagana et al
-447	Caimi y Caimi
-448	Jiménez Murillo y Montero Pérez
-449	Rivas Jiménez, M
-450	Brunicardi et al
-451	Burdiles, P.
-452	Carvajal, C.
-453	Townsend et al
-454	Hampton, J.
-455	Herring, W.
-456	Houghton & Gray
-457	Ebensperger, E., & Lizana, J.
-458	Beckmann et al
-459	Martín Zurro, Amando
-460	Alvarez, A.R.
-461	Argente & Alvarez
-462	Nicola Zammit
-463	Bhat et al
-464	Bickley
-465	Burdiles, P.
-466	Brunicardi et al
-467	Caimi y Caimi
-468	Carvajal, C.
-469	Douglas et al
-470	Lorenzo, e.a.
-471	Giménez, M.
-472	Goic et al
-473	Hampton, J.
-474	Hampton, J.
-475	Herring, W.
-476	Houghton & Gray
-477	Jiménez Murillo y Montero Pérez
-478	Jiménez Murillo y Montero Pérez
-479	Kasper, e.a.
-480	Kumar & Clark
-481	Laso, F.J.
-482	Ian Wilkinson
-483	Lorenzo, e.a.
-484	Mandell, J.
-485	McGee, S.
-486	Pagana et al
-487	Prieto Valtueña, JM
-488	Quíck et al
-489	Rivas Jiménez, M
-490	López., R.
-491	Surós y Surós
-492	Townsend et al
-493	Walker, e.a.
-494	Hughes, &.K.
-495	Kliegman, e.a.
-496	Paris, M.e.
-497	White, A.
+250	Kandel, e.a.
+251	Bear, e.a.
+252	Blumenfeld, H.
+253	Diamond, e.a.
+254	Kiernan, & R.
+255	Martín, J.H.
+256	Ojeda, e.I.
+257	Puelles, L. e.
+258	Snell, R.
+259	Haines, D.
+260	Schünke, e. a.
+261	Brunton, e.a.
+262	Laurence Brunton. Bruce Chabner
+263	Florez, e.a.
+264	Bhat, e.a.
+265	Golan, e.a.
+266	Loose., R. Y.
+267	Lorenzo, e.a.
+268	Lorenzo, e.a.
+269	Lüllmann, e.a.
+270	Neal, M.
+271	Page, B.
+272	Preston, C.
+273	Rang, e.a.
+274	Richards, e.a.
+275	Rodríguez, CR.
+276	Trevor, e.a.
+277	Katzung, Bertram,Trevor
+278	Whalen, e.a.
+279	Abbas, Abul K., Lichtman, Andrew H.H., Pillai, Shiv.
+280	Karen C. Carroll et al
+281	Kenneth J. Ryan
+282	John E. Bennett, Raphael Dolin, Martín J. Blaser
+283	Murray Patrick R., Rosenthal Ken S., P Faller Michael A.
+284	Roberto Arenas Guzmán
+285	Doan T., Melvold R., Viselli S., Waltenbaugh C.
+286	Male D., Brrostoff J.,Roth D., Roitt I.
+287	Méndez Lj, López R., Hernández F.
+288	Owen J., Punt J., Stranford Sa.
+289	Pavón Romero L., Jiménez Martinez Mc, Garcés Me
+290	Delves, Martín, Burton, Roitt
+291	Tay J., Gutierrez M., Molina J., López R., Manjarrez M.
+292	Streiner, David L.
+293	Alfredo de Jesús Celis de la Rosa
+294	Cobo, Erik
+295	Dawson, Gail F.
+296	Norman, G. S.
+297	Pagano, M.G.
+298	Taucher, E.
+299	Black & Andreasen
+300	Ricardo Capponi Martínez
+301	Carlat D.
+302	Casey &Kelly
+303	Gelder et al.
+304	Eguiluz Uruchurtu I y Segarra Echebarría R.
+305	Ganti & Kaufman
+306	Owen et al.
+307	Oyebode, Femi
+308	Semple & Smyth
+309	Shea, Shawn Christopher
+310	Valdivia, Mario
+311	Vallejo Ruiloba J.
+312	VVAA
+313	VVAA
+314	Pérez, A.J.
+315	Hammer & M.
+316	Kasper, e.a.
+317	Laso, F.
+318	López., R.
+319	Silbernal, &.L.
+320	Walker, e.a.
+321	Goljan, E.
+322	Kumar, e.a.
+323	Kumar, e.a.
+324	Reissner, R.
+325	Schneider, Arthur-Szanto, Philip
+326	Stryer & Rubin
+327	Bickley
+328	Goic et al.
+329	Mandell, J
+330	Argente & Alvarez
+331	Cardellach, L. et al.
+332	Casado, V. et al.
+333	Douglas et al.
+334	Hampton, J.
+335	Hampton, J.
+336	Herring, W.
+337	Houghton & Gray
+338	Kasper, e.a.
+339	Kassirer et al.
+340	Laposata, M.
+341	Laso FJ.
+342	Leblond et al.
+343	McGee S.
+344	Pagana et al.
+345	Perez Arellano JL.
+346	Valtueña, JMP
+347	Rozman & Cardellach, L.
+348	Smith & Farrell
+349	Stryer & Rubin
+350	Surós & Surós
+351	Swartz, MH
+352	Brunton, e.a.
+353	Brunton, e.a.
+354	Florez, e.a.
+355	Bhat, e.a.
+356	Golan, e.a.
+357	Loose., R. Y.
+358	Lorenzo, e.a.
+359	Lorenzo, e.a.
+360	Lüllmann, e.a.
+361	Neal, M.
+362	Page, B.
+363	Preston, C.
+364	Rang, e.a.
+365	Richards, e.a.
+366	Rodríguez, CR.
+367	Trevor, e.a.
+368	Katzung, Bertram,Trevor
+369	Whalen, e.a.
+370	Mandell, Douglas and Bennet
+371	Carey, e.a.
+372	Carroll, e.a.
+373	Engleberg, N.C.
+374	Murray, e.a.
+375	Murray, e.a.
+376	Abbas, e.a.
+377	Abbas, e.a.
+378	Bauman, R.
+379	Goering, e.a.
+380	Goering, e.a.
+381	Cuello, G.
+382	Gordis, L.
+383	Ruiz, M.
+384	Ajetunmobi, O.
+385	De Irala, E.J.
+386	Fletcher, e.a.
+387	Greenhalgh
+388	Hulley, e.a.
+389	Merrill, R. M.
+390	Moore, &.M.
+391	Rothman, K.J.
+392	Straus, e.a.
+393	Szklo, &.N.
+394	Weiss, N.L.
+395	Brady, H.
+396	Cockerham, C. William
+397	Gabe, Bury, Mike, & Elston, Mary Ann
+398	Browner, C. H.
+399	Canguilhem, G.
+400	Canguilhem, G.
+401	Castro, R. & Bronfman
+402	Conrad, P.
+403	Durkheim, E.
+404	Duarte, NE.
+405	Foucault, M.
+406	Foucault, M.
+407	Gaete, J.
+408	Good, B.
+409	Good, B.
+410	Illich, I.
+411	Kottow, M.
+412	Mechanic, D.
+413	Morsy, Soheir A.
+414	Schepper-Hughes, Nancy & Lock, Margaret
+415	Sanchez, MA.
+416	McGee, G.
+417	Gracia, D.
+418	Ameneiros et al.
+419	Aristóteles
+420	Clavé E.
+421	Couceiro A.
+422	Drane, J.
+423	Couceiro A.
+424	Gómez, J.
+425	Gracia, D
+426	Herranz Rodriguez, G.
+427	McGee, G.
+428	Meckler, A.
+429	Randels, P. &.
+430	Ministerio de Salud
+431	Sanchez, MA.
+432	Santos de Unamuno, C.
+433	Vaughn, L.
+434	Euliano & Gravenstein 
+435	Jiménez Murillo y Montero Pérez
+436	Giménez, M.
+437	Quíck et al
+438	Kumar & Clark
+439	Ian Wilkinson
+440	Mandell, J.
+441	Hampton, J.
+442	Pagana et al
+443	Arancibia y Ugarte
+444	Caimi y Caimi
+445	Herrera et al
+446	Jiménez Murillo y Montero Pérez
+447	Rivas Jiménez, M
+448	Brunicardi et al
+449	Burdiles, P.
+450	Carvajal, C.
+451	Doherty, G.M.
+452	Espinoza R.
+453	Parrilla Paricio y Landa García
+454	Townsend et al
+455	Argente & Alvarez
+456	Nicola Zammit
+457	Benjamín, I.
+458	Bhat et al
+459	Bickley
+460	Douglas et al
+461	Goic et al
+462	Kasper, e.a.
+463	Laso, F.J.
+464	Lorenzo, e.a.
+465	McGee, S.
+466	Pérez Arellano, A.J.
+467	Prieto Valtueña, JM
+468	Raftery et al
+469	López., R.
+470	Surós y Surós
+471	Walker, e.a.
+472	Hampton, J.
+473	Herring, W.
+474	Houghton & Gray
+475	Laposata, M.
+476	Smith & Farrell
+477	Kumar & Clark
+478	Lindsay & Bone
+479	Black & Andreasen
+480	Argente & Alvarez
+481	Bickley
+482	Douglas et al.
+483	Hammer & McPhee
+484	Kasper et al
+485	Kemper, e.a.
+486	Kumar, e.a.
+487	Kumar y Clark
+488	Laso FJ.
+489	Ian Wilkinson
+490	McGee, S.
+491	Pérez Arellano, A.J.
+492	Prieto Valtueña, JM
+493	López., R.
+494	Silbernal, &.L.
+495	Stryer & Rubin
+496	Surós y Surós
+497	Walker, e.a.
+498	Adams, A.
+499	Alvarez, V. & Antuña, R.
+500	Aminoff et al
+501	Biller, J.
+502	Barinagarrementeria
+503	Blumenfeld, H.
+504	Fuller, G.
+505	Greenberg et al
+506	Haines, D.
+507	López-Escobar, FM.
+508	Mumenthaler et al
+509	Ropper et al
+510	Vergara, E. & Fonck, L.
+511	Weiner et al.
+512	Wilkinson & Lennox
+513	Yañez, A.
+514	Zarranz, JJ.
+515	Carlat D.
+516	Cowen et al
+517	Ganti & Kaufman
+518	Owen et al
+519	Semple & Smyth
+520	Shea CS.
+521	Valdivia, Mario
+522	Vallejo Ruiloba J.
+523	VVAA
+524	VVAA
+525	Beaglehole & Bonita
+526	Gestal-Otero & Fernández-Crehuet
+527	Alvarez-Dardett & Colomer
+528	Frías Osuna, A.
+529	Málaga & Restrepo
+530	Pinger & McKenzie
+531	Schneider, M.
+532	Turnock, B.
+533	Cunningham G., Redstone, C.
+534	Soars L.
+535	Marks J.
+536	Murphy R.
+537	Cunningham G., Redstone, C.
+538	McCarter
+539	McCarthy, M., McCarten, J. & Sandiford, H.
+540	Murphy R.
+541	Alexander, L.G.
+542	Murphy J.
+543	Murphy, R. & Altman, R.
+544	Andormo & Ivone
+545	Oneto & Fischer
+546	Toy et al
+547	Annas, G.
+548	Gracia, D.
+549	Johnson et al
+550	McGee, G.
+551	Murphy, T.
+552	Pence, G.
+553	Randels & Pierce
+554	Sanchez, MA.
+555	Vaughn, L.
+556	Euliano & Gravenstein 
+557	Jiménez Murillo y Montero Pérez
+558	Giménez, M.
+559	Quíck et al
+560	Kumar & Clark
+561	Ian Wilkinson
+562	Mandell, J.
+563	Hampton, J.
+564	Pagana et al
+565	Arancibia y Ugarte
+566	Caimi y Caimi
+567	Herrera et al
+568	Jiménez Murillo y Montero Pérez
+569	Rivas Jiménez, M
+570	Brunicardi et al
+571	Burdiles, P.
+572	Carvajal, C.
+573	Doherty, G.M.
+574	Espinoza R.
+575	Parrilla Paricio y Landa García
+576	Townsend et al
+577	Argente & Alvarez
+578	Nicola Zammit
+579	Benjamín, I.
+580	Bhat et al
+581	Bickley
+582	Douglas et al
+583	Goic et al
+584	Kasper, e.a.
+585	Laso, F.J.
+586	Lorenzo, e.a.
+587	McGee, S.
+588	Pérez Arellano, A.J.
+589	Prieto Valtueña, JM
+590	Raftery et al
+591	López., R.
+592	Surós y Surós
+593	Walker, e.a.
+594	Hampton, J.
+595	Herring, W.
+596	Houghton & Gray
+597	Laposata, M.
+598	Smith & Farrell
+599	Martínez R., A., Erstnes B., G.
+600	Miller M.
+601	Marco, F.
+602	Skinner HB et al
+603	Sam W. Wiesel, John N. Delahay, Marc C. Connell
+604	American Academy of Orthopedic Surgeons (AAOS)
+605	Gasic Brzovic, Miguel
+606	Greene, WB
+607	Marco Martínez y Urda Martínez-Aedo
+608	Munuera Martínes, L.
+609	DeFroda. Steven F, Hansen. Heather, Gil. Joseph A, Hawari. Ashraf H, Cruz. Aristides I. Jr.
+610	Di Chen, Jie Shen, Weiwei Zhao, Tingyu Wang, Lin Han, John L Hamilton & Hee-Jeong Im
+611	Hvid Ivan, Parsch Klaus
+612	Albala, C, et al
+613	Astiasarán, I & Martínez, J.A.
+614	Barker, D.
+615	Gil Hernández, A.
+616	González de León, D. et al
+617	Salas-Salvado J. et al
+618	Mahan, L.K.& Escott-Stump, S
+619	Mataix, J.
+620	Requejo, A. & Ortega, O.
+621	Román, D.
+622	Salas, L.
+623	Alejandro, H.
+624	Cervera, P.e.
+625	EGO-Chile, M.d.
+626	FAO
+627	Marielle, C.e.
+628	Ministerio de Salud
+629	Ministerio de Salud
+630	Ministerio de Salud
+631	Ministerio de Salud
+632	Ministerio de Salud
+633	Ministerio de Salud
+634	Minsal, Mineduc, Vida Chile, Chile Deportes, Inta, Universidad de Chile
+635	Moreiras, O. (s.f.)
+636	OPS/OMS, M.
+637	Pizarro, F. et al
+638	Planas, M. y P.
+639	Vazquez, C.
+640	Argimón Pallás, J. & Jiménez Villa, J.
+641	Cuadras, C.
+642	Dillon, W. & Goldstein, M.
+643	Hernández, S. et al
+644	Milton, J. & Tsokos J.O.
+645	Milton, S.
+646	Miranda, C. et al
+647	Pita-Fernández, S. & Pértegas-Díaz, S.
+648	Cunningham G., Redstone, C.
+649	Soars L.
+650	Marks J.
+651	Murphy R.
+652	Cunningham G., Redstone, C.
+653	McCarter
+654	McCarthy, M., McCarten, J. & Sandiford, H.
+655	Murphy R.
+656	Alexander, L.G.
+657	Murphy J.
+658	Murphy, R. & Altman, R.
+659	Euliano & Gravenstein 
+660	Jiménez Murillo y Montero Pérez
+661	Giménez, M.
+662	Kaisary et al
+663	Kumar & Clark
+664	Ian Wilkinson
+665	Mandell, J.
+666	Hampton, J.
+667	Pagana et al
+668	Al-Sukani et al
+669	Cruz Hernández et al
+670	San Miguel y Sánchez Guijo
+671	Arancibia y Ugarte
+672	Caimi y Caimi
+673	Herrera et al
+674	Jiménez Murillo y Montero Pérez
+675	Rivas Jiménez, M
+676	Brunicardi et al
+677	Burdiles, P.
+678	Carvajal, C.
+679	Doherty, G.M.
+680	Espinoza R.
+681	Parrilla Paricio y Landa García
+682	Townsend et al
+683	Argente & Alvarez
+684	Nicola Zammit
+685	Benjamín, I.
+686	Bhat et al
+687	Bickley
+688	Douglas et al
+689	Goic et al
+690	Kasper, e.a.
+691	Laso, F.J.
+692	Lorenzo, e.a.
+693	McGee, S.
+694	Pérez Arellano, A.J.
+695	Prieto Valtueña, JM
+696	Raftery et al
+697	López., R.
+698	Surós y Surós
+699	Walker, e.a.
+700	Hampton, J.
+701	Herring, W.
+702	Houghton & Gray
+703	Laposata, M.
+704	Smith & Farrell
+705	Albert, Lori
+706	Rúa-Figueroa Fernández de Larrinoa, I
+707	Sánchez et al
+708	O'Young et al
+709	Frontera et al
+710	González-Mas, R.
+711	Maitin I.
+712	Miranda Mayordomo y Flores García
+713	Montgomery, H. &.
+714	Pleguezuelos Cobo et al
+715	Viladot Pericé et al
+716	Zollman F.
+717	Alonso, I Simón, P. Sanchez
+718	Guarda & Gubelin
+719	Wolff et al
+720	Bolognia et al
+721	Ferrándiz, C.
+722	Habif, T.
+723	McGee, S.
+724	Prieto Valtueña, JM
+725	Raftery et al
+726	López., R.
+727	Surós y Surós
+728	Walker, e.a.
+729	Lubliner, D.
+730	VV.AA.
+731	Lambert, J. Lambert, S.
+732	Fong, e.a.
+733	Holzinger, A.
+734	Hoyt, R.
+735	Lahoz-Beltrá, R.
+736	Lubliner, D.
+737	Lyuboslavsky, V.
+738	Hulley et al
+739	Jiménez Villa et al
+740	Katz, M.H.
+741	Argimón-Pallás y Jiménez-Villa
+742	Browner, W.
+743	Byrne, D.
+744	Cobo, E. M.
+745	Cuello, G.
+746	Dawson, G.
+747	De Irala, J.
+748	Duartge, O. &. Y.
+749	Foriste, B. &.
+750	Hall, G.
+751	Hernández-Sampieri et al
+752	Hodges & Tomas
+753	Jagaadesh et al
+754	Nieto & Szklo
+755	Ruiz Morales & Gómez Restrepo
+756	Straus et al
+757	Watkins & Portney
+758	Gestal-Otero & Fernández-Crehuet
+759	Katz et al
+760	Burdiles, P.
+761	Gil Gregorio, P
+762	Kasper, e.a.
+763	Martín Z., et al
+764	Restepro y Málaga
+765	Acastello Eduardo
+766	Ashcraft Keith
+767	Behrman R. y kliegman R.
+768	Cruz, M.
+769	Fuller, J.
+770	Muñoz Calvo M.T.
+771	Games EJ, et al
+772	Klass M.A., B.K.
+773	Marcdante, KJ, et al
+774	Martínez y Martínez, R.
+775	Bernstein D, Shelov SP.
+776	CENECET
+777	Sabiston D.
+778	Valoria J.
+779	Lissauer T, Clayden G.
+780	Ruiz Frutos et al
+781	LaDou, J. & Harrison, R.
+782	LaDou, J. & Harrison, R.
+783	Alli, B.
+784	Ceballos Atienza, R.
+785	Fernández, R.
+786	Hodgson, Ernest
+787	Koh & Aw.
+788	Nava, R.
+789	Nava, R.
+790	Nogue-Xaraus S.
+791	Ojeda Gil, José A.
+792	Oliva, E.
+793	Pillay, VV
+794	Rojas, M.
+795	Graue E.
+796	García-Feijoo, Julián y Pablo-Júlvez, Luis E.
+797	Alezzandrini, A.
+798	Kanski J.
+799	Kanski J.
+800	Cremers AL, Bowers J., et al
+801	Palis, A.G.
+802	Hulley et al
+803	Jiménez Villa et al
+804	Katz, M.H.
+805	Argimón-Pallás y Jiménez-Villa
+806	Browner, W.
+807	Byrne, D.
+808	Cobo, E. M.
+809	Cuello, G.
+810	Dawson, G.
+811	De Irala, J.
+812	Duartge, O. &. Y.
+813	Foriste, B. &.
+814	Hall, G.
+815	Hernández-Sampieri et al
+816	Hodges & Tomas
+817	Jagaadesh et al
+818	Nieto & Szklo
+819	Ruiz Morales & Gómez Restrepo
+820	Straus et al
+821	Watkins & Portney
+822	Chantal et al
+823	Martín, Z. et al
+824	Kopitowski et al
+825	Montero, L.
+826	Smith & Shimp
+827	Argente & Alvarez
+828	Nicola Zammit
+829	Benjamín, I.
+830	Bhat et al
+831	Bickley
+832	Burdiles, P.
+833	Cruz Hernández et al
+834	D'Hyver & Gutierrez
+835	Douglas et al
+836	Giménez, M.
+837	Gil Gregorio, P
+838	Goic et al
+839	Gutiérrez et al
+840	Ham et al
+841	Herring, W.
+842	Houghton & Gray
+843	Jiménez Murillo y Montero Pérez
+844	Kasper, e.a.
+845	King & Lipsky
+846	Kumar & Clark
+847	Laposata, M.
+848	Ian Wilkinson
+849	Mandell, J.
+850	Marín Larraín PP.
+851	McGee, S.
+852	Pagana et al
+853	Quíck et al
+854	Raftery et al
+855	Walker, e.a.
+856	Gisbert Clabuig, J.A.
+857	Teke Schlicht, A.
+858	Hernández, C.
+859	Madea B.
+860	Saukko P., Knight, B.
+861	J. Wyatt, T. Squires, G. Norfolk, J. Payne-James
+862	Humberto Giugni
+863	Vargas Alvarado, E.
+864	García Garduza, I.
+865	García Arellano, JF.
+866	Di Maio, V., Dana, S.
+867	Rodríguez Calvo MS, Vazquez-Portomeñe F.
+868	Rodríguez Calvo MS, Vazquez-Portomeñe F.
+869	Rodríguez Calvo MS
+870	Bogusz, M.J.
+871	Dart, R. C.
+872	Levine, B.
+873	Butler, JM
+874	Jobling MA, Gill P
+875	Kayser M., de Knijff P.
+876	
+877	
+878	
+879	Cuello M., Miranda V. Y Ralph C.
+880	Cunningham, Gary, Leveno, Kenneth J., Bloom, Steven L., 6 Spong, Catherine Y.
+881	Bradshaw, Karen D., Corton, Marlene M., Halvorson, Lisa M., Hoffman, Barbara L., Schaffer, Marlene., & Schorge, John O.
+882	Ebensperger, E., & Lizana, J.
+883	Beckmann et al
+884	Creasy & Resnick
+885	Dechernety et al
+886	Gabbe et al
+887	Hoffman, B. et al
+888	Kenny & Bickerstaff
+889	lobo et al
+890	Matorras y Remohi
+891	Roura y Rodríguez
+892	Strauss & Barbieri
+893	Marín Larraín PP.
+894	King & Lipsky
+895	D'Hyver & Gutierrez
+896	Gil Gregorio, P
+897	Gutiérrez et al
+898	Ham et al
+899	Kane et al
+900	Rodríguez & Lazcano
+901	Thompson et al
+902	Arancibia & Ugarte
+903	Argente & Alvarez
+904	Nicola Zammit
+905	Benjamín, I.
+906	Bhat et al
+907	Bickley
+908	Brunicardi et al
+909	Burdiles, P.
+910	Carvajal, C.
+911	Caimi y Caimi
+912	Cruz Hernández et al
+913	Doherty, G.M.
+914	Douglas et al
+915	Giménez, M.
+916	Goic et al
+917	Hampton, J.
+918	Hampton, J.
+919	Herring, W.
+920	Houghton & Gray
+921	Jiménez Murillo y Montero Pérez
+922	Jiménez Murillo y Montero Pérez
+923	Kaisary et al
+924	Kasper, e.a.
+925	Kumar & Clark
+926	Laposata, M.
+927	Laso, F.J.
+928	Ian Wilkinson
+929	Lorenzo, e.a.
+930	Mandell, J.
+931	McGee, S.
+932	Pagana et al
+933	Pérez Arellano, A.J.
+934	Prieto Valtueña, JM
+935	Quíck et al
+936	Raftery et al
+937	Rivas Jiménez, M
+938	Rozman y Cardellach López
+939	Smith & Farrell
+940	Surós y Surós
+941	Walker, e.a.
+942	Townsend et al
+943	Lalwani, A.
+944	Peñaranda, A.
+945	Arrieta, P. & Prado, C.
+946	Chan & Goddard
+947	Montila, M. 
+948	Pensak, M.
+949	Poch, J.
+950	SEOR, S.E.-F.
+951	Tysome, K. &.
+952	Jiménez Murillo y Montero Pérez
+953	Kumar & Clark
+954	Kasper, e.a.
+955	Longmore et al
+956	Ian Wilkinson
+957	Hampton, J.
+958	Mandell, J.
+959	Pagana et al
+960	Caimi y Caimi
+961	Jiménez Murillo y Montero Pérez
+962	Rivas Jiménez, M
+963	Arancibia y Ugarte
+964	Argente & Alvarez
+965	Nicola Zammit
+966	Benjamín, I.
+967	Bhat et al
+968	Bhat et al
+969	Bickley
+970	Douglas et al
+971	Lorenzo, e.a.
+972	Goic et al
+973	Laso, F.J.
+974	McGee, S.
+975	Pérez Arellano, A.J.
+976	Prieto Valtueña, JM
+977	Raftery et al
+978	Rozman y Cardellach López
+979	Surós y Surós
+980	Walker, e.a.
+981	Hampton, J.
+982	Herring, W.
+983	Houghton & Gray
+984	Laposata, M.
+985	Smith & Farrell
+986	Acuña, R. e.
+987	Schneider, & L.
+988	Black, &.A.
+989	Burton, N.
+990	Capponi, M.R.
+991	Carlat, D.
+992	Casey, &.B.
+993	Casey, &.K.
+994	Cowen, e.a.
+995	Eguiluz, U.I.
+996	Fish, F.
+997	Ganti, &.K.
+998	Gask, e.a.
+999	McCarron, e.a.
+1000	Milhorn, H.
+1001	Morris, &.R.
+1002	Owen, e.a.
+1003	Oyebode, F.
+1004	Semple, &.S.
+1005	Shea, C.
+1006	Tizón, G.e.
+1007	Valdivia, M.
+1008	Vallejo, R.J.
+1009	VV.AA.
+1010	VV.AA. CIE-10
+1011	Euliano & Gravenstein 
+1012	Euliano & Gravenstein 
+1013	Jiménez Murillo y Montero Pérez
+1014	Giménez, M.
+1015	Quíck et al
+1016	Hampton, J.
+1017	Mandell, J.
+1018	Pagana et al
+1019	Arancibia y Ugarte
+1020	Caimi y Caimi
+1021	Herrera, e.a.
+1022	Jiménez Murillo y Montero Pérez
+1023	Rivas Jiménez, M
+1024	Brunicardi et al
+1025	Burdiles, P.
+1026	Carvajal, C.
+1027	Doherty, G.M.
+1028	Doherty, G.M.
+1029	Espinoza, R.
+1030	Parrilla, P.
+1031	Townsend et al
+1032	Townsend et al
+1033	Hampton, J.
+1034	Herring, W.
+1035	Houghton & Gray
+1036	Laposata, M.
+1037	Smith & Farrell
+1038	American Academy of Orthopedic Surgeons
+1039	Skinner, H
+1040	Balibrea, J.
+1041	Cuello M., Miranda V. Y Ralph C.
+1042	Dashe, K.
+1043	Bradshaw, Karen D., Corton, Marlene M., Halvorson, Lisa M., Hoffman, Barbara L., Schaffer, Marlene., & Schorge, John O.
+1044	Ebensperger, E., & Lizana, J.
+1045	Beckmann et al
+1046	Dechernety et al
+1047	Gabbe et al
+1048	Hoffman, &.S.
+1049	Hoffman, &.S.
+1050	Kenny & Bickerstaff
+1051	Lobo et al
+1052	Matorras y Remohi
+1053	Resnick., C. &.
+1054	Roura y Rodríguez
+1055	Strauss & Barbieri
+1056	Chantal, e.a.
+1057	Martín Zurro, Amando
+1058	Kopitowski et al
+1059	Montero, L.
+1060	Smith & Shimp
+1061	Alvarez, A.R.
+1062	Burr, C.P.-L.
+1063	Gilbert, e.a.
+1064	Montero, J.T.
+1065	Nerio., R.G.
+1066	Oyarce, P.A.
+1067	Soto G. Lutzow J,M.A.
+1068	VV.AA.
+1069	Arancibia, Y. U.
+1070	Argente & Alvarez
+1071	Nicola Zammit
+1072	Benjamín, I.
+1073	Bhat et al
+1074	Bhat et al
+1075	Bickley
+1076	Burdiles, P.
+1077	Brunicardi et al
+1078	Caimi y Caimi
+1079	Carvajal, C.
+1080	Cruz Hernández et al
+1081	D'Hyver & Gutierrez
+1082	Doherty, G.M.
+1083	Doherty, G.M.
+1084	Douglas et al
+1085	Lorenzo, e.a.
+1086	Giménez, M.
+1087	Gil Gregorio, P
+1088	Goic et al
+1089	Gutiérrez et al
+1090	Ham et al
+1091	Hampton, J.
+1092	Hampton, J.
+1093	Herring, W.
+1094	Houghton & Gray
+1095	Jiménez Murillo y Montero Pérez
+1096	Jiménez Murillo y Montero Pérez
+1097	Kaisary et al
+1098	Kane et al
+1099	Kasper, e.a.
+1100	King & Lipsky
+1101	Kumar & Clark
+1102	Laposata, M.
+1103	Laso, F.J.
+1104	Longmore et al
+1105	Ian Wilkinson
+1106	Lorenzo, e.a.
+1107	Mandell, J.
+1108	Marín Larraín PP.
+1109	McGee, S.
+1110	Pagana et al
+1111	Pérez Arellano, A.J.
+1112	Prieto Valtueña, JM
+1113	Quíck et al
+1114	Raftery et al
+1115	Rivas Jiménez, M
+1116	Rodríguez, y. L.
+1117	López., R.
+1118	Smith & Farrell
+1119	Surós y Surós
+1120	Thompson, e.a.
+1121	Townsend et al
+1122	Townsend et al
+1123	Walker, e.a.
+1124	Marcdante, KJ, et al
+1125	Marcdante, KJ, et al
+1126	Saieh, C.
+1127	Guerrero, F.e.
+1128	Herrera, &.Q.
+1129	Hughes, &.K.
+1130	Kliegman, e.a.
+1131	Paris, M.e.
+1132	Pérez, P.e.
+1133	Rostion, C.
+1134	Schonhautt, y.A.
+1135	Shah, e.a.
+1136	White, A.
+1137	White, A.
+1138	Zitelli, e.a.

@@ -49,7 +49,7 @@ Para este paso, se priorizó el exportar los datos relacionados a libros físico
 	- 94.40%
 
 ### E2: Filtración de la primera compilación, Separar detalle en 4 o 5 columnas
-- [X] Facmed		1166/1166 (1166)
+- [X] Facmed		1138/1138 (1138)
 	- 100.0%
 - [ ] Facsal		0/830 (246 + 181 + 189 + 241)
 	- 0.0%

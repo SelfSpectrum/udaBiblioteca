@@ -12,7 +12,7 @@ def AppendLibro(file : str) -> None:
             for i in load:
                 data : list[str] = i.split('\t')
                 count = sum(1 if j == '' or ''.join(j.split(' ')).lower() in keys else 0 for j in data)
-                if (count > 2): continue
+                if (count > 6): continue
                 #Id, N. Library, Name, Year, Edition, Obligatory, Copies
                 book.write('\t'.join([str(idBook), '0', data[3], data[5], '0', '1' if data[2] == 'OBLIGATORIA:' else '0', '0' if data[7] == '' else data[7]]) + '\n')
                 #Id, Name, Subject, Semester
