@@ -55,16 +55,16 @@ Para este paso, se priorizó el exportar los datos relacionados a libros físico
 	- 37.50%
 - [ ] Humanidades	449/1929 (317 + 132 + 354 + 509 + 372 + 245)
 	- 23.28%
-- [ ] Ingeniería	142/1497 (142 + 260 + 359 + 214 + 260 + 262)
-	- 9.49%
+- [ ] Ingeniería	402/1497 (142 + 260 + 359 + 214 + 260 + 262)
+	- 26.85%
 - [ ] Juridicas		279/433 (279 + 154)
 	- 64.43%
 - [ ] Técnicos		251/533 (88 + 97 + 66 + 51 + 93 + 60 + 78)
 	- 47.09%
 - [ ] Vallenar		0/373 (85 + 99 + 60 + 78 + 51)
 	- 0.0%
-- [ ] Total		2184/6391
-	- 38.21%
+- [ ] Total		2702/6391
+	- 42.28%
 
 ### TL2: Migración de los datos de manera bruta a los documentos finales
 - [ ] Libros Compilados	0/6391
