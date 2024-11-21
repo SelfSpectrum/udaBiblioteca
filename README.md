@@ -51,20 +51,20 @@ Para este paso, se priorizó el exportar los datos relacionados a libros físico
 ### E2: Filtración de la primera compilación, Separar detalle en 4 o 5 columnas
 - [X] Facmed		1138/1138 (1138)
 	- 100.0%
-- [ ] Facsal		183/488 (183 + 41 + 122 + 142)
-	- 37.50%
+- [ ] Facsal		224/488 (183 + 41 + 122 + 142)
+	- 45.90%
 - [ ] Humanidades	803/1929 (317 + 132 + 354 + 509 + 372 + 245)
 	- 41.63%
-- [ ] Ingeniería	975/1497 (142 + 260 + 359 + 214 + 260 + 262)
-	- 65.13%
+- [ ] Ingeniería	1235/1497 (142 + 260 + 359 + 214 + 260 + 262)
+	- 82.50%
 - [ ] Juridicas		279/433 (279 + 154)
 	- 64.43%
 - [ ] Técnicos		251/533 (88 + 97 + 66 + 51 + 93 + 60 + 78)
 	- 47.09%
 - [ ] Vallenar		0/373 (85 + 99 + 60 + 78 + 51)
 	- 0.0%
-- [ ] Total		3270/6391
-	- 51.17%
+- [ ] Total		3571/6391
+	- 55.88%
 
 ### TL2: Migración de los datos de manera bruta a los documentos finales
 - [ ] Libros Compilados	0/6391
