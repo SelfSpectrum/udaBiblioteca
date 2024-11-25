@@ -53,18 +53,18 @@ Para este paso, se priorizó el exportar los datos relacionados a libros físico
 	- 100.0%
 - [ ] Facsal		488/488 (183 + 41 + 122 + 142)
 	- 100.0%
-- [ ] Humanidades	1312/1929 (317 + 132 + 354 + 509 + 372 + 245)
-	- 68.01%
+- [ ] Humanidades	1684/1929 (317 + 132 + 354 + 509 + 372 + 245)
+	- 89.30%
 - [ ] Ingeniería	1497/1497 (142 + 260 + 359 + 214 + 260 + 262)
 	- 100.0%
 - [ ] Juridicas		279/433 (279 + 154)
 	- 64.43%
-- [ ] Técnicos		251/533 (88 + 97 + 66 + 51 + 93 + 60 + 78)
-	- 47.09%
+- [ ] Técnicos		395/533 (88 + 97 + 66 + 51 + 93 + 60 + 78)
+	- 74.11%
 - [ ] Vallenar		0/373 (85 + 99 + 60 + 78 + 51)
 	- 0.0%
-- [ ] Total		4965/6391
-	- 77.69%
+- [ ] Total		5481/6391
+	- 85.76%
 
 ### TL2: Migración de los datos de manera bruta a los documentos finales
 - [ ] Libros Compilados	0/6391
