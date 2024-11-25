@@ -41,32 +41,32 @@ Para este paso, se priorizó el exportar los datos relacionados a libros físico
 	- 100.0%
 - [X] Juridicas		571/571 (289 + 282)
 	- 100.0%
-- [ ] Técnicos		749/927 (100 + 129 + 92 + 75 + 148 + 92 + 121 + 86 + 84)
-	- 90.80%
-- [ ] Vallenar		508/797 (100 + 128 + 90 + 113 + 121 + 86 + 84 + 75)
-	- 63.74%
-- [ ] Total		7732/8199
-	- 94.40%
+- [ ] Técnicos		927/927 (100 + 129 + 92 + 75 + 148 + 92 + 121 + 86 + 84)
+	- 100.0%
+- [ ] Vallenar		0/797 (100 + 128 + 90 + 113 + 121 + 86 + 84 + 75)
+	- 0.0%
+- [ ] Total		7402/8199
+	- 90.28%
 
 ### E2: Filtración de la primera compilación, Separar detalle en 4 o 5 columnas
 - [X] Facmed		1138/1138 (1138)
 	- 100.0%
-- [ ] Facsal		488/488 (183 + 41 + 122 + 142)
+- [X] Facsal		488/488 (183 + 41 + 122 + 142)
 	- 100.0%
-- [ ] Humanidades	1684/1929 (317 + 132 + 354 + 509 + 372 + 245)
-	- 89.30%
-- [ ] Ingeniería	1497/1497 (142 + 260 + 359 + 214 + 260 + 262)
+- [X] Humanidades	1929/1929 (317 + 132 + 354 + 509 + 372 + 245)
 	- 100.0%
-- [ ] Juridicas		279/433 (279 + 154)
-	- 64.43%
-- [ ] Técnicos		395/533 (88 + 97 + 66 + 51 + 93 + 60 + 78)
-	- 74.11%
-- [ ] Vallenar		0/373 (85 + 99 + 60 + 78 + 51)
-	- 0.0%
-- [ ] Total		5481/6391
-	- 85.76%
+- [X] Ingeniería	1497/1497 (142 + 260 + 359 + 214 + 260 + 262)
+	- 100.0%
+- [X] Juridicas		433/433 (279 + 154)
+	- 100.0%
+- [X] Técnicos		532/532 (88 + 97 + 66 + 51 + 93 + 60 + 77)
+	- 100.0%
+- [X] Vallenar		373/373 (85 + 99 + 60 + 78 + 51)
+	- 100.0%
+- [X] Total		6391/6391
+	- 100.0%
 
 ### TL2: Migración de los datos de manera bruta a los documentos finales
-- [ ] Libros Compilados	0/6391
+- [ ] Libros Compilados	0/6229
 
 ### ETL3: Eliminación de duplicados y redundancias, estandarización del nuevo modelo
