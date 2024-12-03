@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "pages": "Pages",
+    "about": "About",
+    "social" : "Social Media",
+    "language": "Language"
+  },
+  "welcome": "Welcome to the raylib Wiki"
+}
+
