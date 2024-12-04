@@ -1,7 +1,7 @@
 -- Table: Author
 CREATE TABLE Author (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name CHAR(128) NOT NULL
+    name VARCHAR(128) NOT NULL
 );
 
 -- Table: AuthorBook
@@ -16,25 +16,25 @@ CREATE TABLE AuthorBook (
 -- Table: Book
 CREATE TABLE Book (
     id INT AUTO_INCREMENT UNIQUE PRIMARY KEY,
-    name CHAR(256) NOT NULL,
-    year INT,
-    edition INT,
-    isbn CHAR(13) UNIQUE,
-    issn CHAR(8) UNIQUE
+    name VARCHAR(256) NOT NULL,
+    year SMALLINT,
+    edition TINYINT,
+    isbn VARCHAR(13) UNIQUE,
+    issn VARCHAR(8) UNIQUE
 );
 
 -- Table: Career
 CREATE TABLE Career (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name CHAR(64) NOT NULL
+    name VARCHAR(64) NOT NULL
 );
 
 -- Table: Subject
 CREATE TABLE Subject (
     id INT AUTO_INCREMENT PRIMARY KEY,
     fkCareer INT NOT NULL,
-    name CHAR(128) NOT NULL,
-    semester INT NOT NULL,
+    name VARCHAR(128) NOT NULL,
+    semester TINYINT NOT NULL,
     FOREIGN KEY (fkCareer) REFERENCES Career(id)
 );
 
@@ -43,6 +43,7 @@ CREATE TABLE SubjectBook (
     idBook INT NOT NULL,
     idSubject INT NOT NULL,
     year SMALLINT,
+    semester TINYINT,
     obligatory BOOLEAN,
     PRIMARY KEY (idBook, idSubject),
     FOREIGN KEY (idBook) REFERENCES Book(id),
@@ -52,7 +53,7 @@ CREATE TABLE SubjectBook (
 -- Table: Theme
 CREATE TABLE Theme (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name CHAR(64) NOT NULL
+    name VARCHAR(64) NOT NULL
 );
 
 -- Table: ThemeBook
@@ -64,18 +65,18 @@ CREATE TABLE ThemeBook (
     FOREIGN KEY (idTheme) REFERENCES Theme(id)
 );
 
--- Table: Link
-CREATE TABLE Link (
+-- Table: LinkSource
+CREATE TABLE LinkSource (
     id INT AUTO_INCREMENT PRIMARY KEY,
     idBook INT NOT NULL,
-    link CHAR(512) NOT NULL,
+    linkSource VARCHAR(512) NOT NULL,
     FOREIGN KEY (idBook) REFERENCES Book(id)
 );
 
 -- Table: Editorial
 CREATE TABLE Editorial (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name CHAR(128) NOT NULL
+    name VARCHAR(128) NOT NULL
 );
 
 -- Table: EditorialBook
@@ -87,20 +88,37 @@ CREATE TABLE EditorialBook (
     FOREIGN KEY (idEditorial) REFERENCES Editorial(id)
 );
 
--- Table: NumBib
-CREATE TABLE NumBib (
+-- Table: NroBib
+CREATE TABLE NroBib (
+    nroBib INT NOT NULL,
+    copias SMALLINT NOT NULL,
+    PRIMARY KEY (nroBib)
+);
+
+-- Table: NroBibBook
+CREATE TABLE NroBib (
     idBook INT NOT NULL,
     nroBib INT NOT NULL,
-    copias INT NOT NULL,
     PRIMARY KEY (idBook, nroBib),
-    FOREIGN KEY (idBook) REFERENCES Book(id)
+    FOREIGN KEY (idBook) REFERENCES Book(id),
+    FOREIGN KEY (nroBib) REFERENCES NroBib(nroBib)
 );
 
 -- Table: Users
 CREATE TABLE Users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(64) UNIQUE NOT NULL,
-    password_hash VARCHAR(256) NOT NULL, -- Store hashed passwords, not plaintext
+    password_hash CHAR(256) NOT NULL, -- Store hashed passwords, not plaintext
     role ENUM('super', 'high', 'low') NOT NULL
 );
 
+-- Table: SubjectUser
+CREATE TABLE SubjectUser (
+    idUser INT NOT NULL,
+    idSubject INT NOT NULL,
+    year SMALLINT,
+    semester TINYINT,
+    PRIMARY KEY (idUser, idSubject),
+    FOREIGN KEY (idUser) REFERENCES Users(id),
+    FOREIGN KEY (idSubject) REFERENCES Subject(id)
+);
