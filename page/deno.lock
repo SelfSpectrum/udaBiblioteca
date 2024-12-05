@@ -209,9 +209,14 @@
     "packageJson": {
       "dependencies": [
         "npm:@vitejs/plugin-vue@^5.1.4",
+        "npm:autoprefixer@^10.4.20",
         "npm:axios@^1.7.8",
+        "npm:bcrypt@^5.1.1",
+        "npm:express-session@^1.18.1",
         "npm:express@^4.21.1",
         "npm:mysql2@^3.11.5",
+        "npm:postcss@^8.4.49",
+        "npm:tailwindcss@^3.4.15",
         "npm:ts-node@^10.9.2",
         "npm:typescript@^5.7.2",
         "npm:vite@^5.4.8",

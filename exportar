@@ -44,7 +44,7 @@ while [ $# -gt 0  ]; do
 			;;
 		-e)
 			# Llamo la función partiendo desde el directorio "coberturas"
-			Capture "./cobertura"
+			Capture "raw/cobertura"
 
 			# 
 			for captura in "${cobertura[@]}"; do

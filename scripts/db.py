@@ -39,6 +39,11 @@ class DB():
                         if command.strip() != '':
                             print(f'Executing:\n{command}')
                             self.cursor.execute(command)
+                with open('insert.sql') as dbData:
+                    for command in dbData.read().split(';'):
+                        if command.strip() != '':
+                            print(f'Executing:\n{command}')
+                            self.cursor.execute(command)
                 self.connection.commit()
             except ConnectionError as e:
                 print(e)
@@ -80,7 +85,9 @@ class DB():
             else: column = f'{",".join(column.split(" "))}'
             if where != '': where = f'WHERE {where}'
             if orderByColumn != '': orderByColumn = f'ORDER BY {",".join(orderByColumn.split(" "))} {orderBy.name}'
-            self.cursor.execute(f'SELECT {column} FROM {table} {where} {orderByColumn}')
+            command = f'SELECT {column} FROM {table} {where} {orderByColumn}'
+            print(command)
+            self.cursor.execute(command)
             if fetch < 1:
                 return self.cursor.fetchall()
             elif fetch == 1:
@@ -112,5 +119,6 @@ class DB():
 def Main():
     name = 'udaBibRefs'
     db = DB(database = name)
+    print(db.Select(table = 'Users', fetch = -1))
     #db.DropDatabase(name)
 if __name__ == '__main__': Main()

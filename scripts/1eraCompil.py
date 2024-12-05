@@ -5,7 +5,7 @@ def AppendLibro(file : str) -> None:
     keys = 'asignaturasemestredetalledebibliografíatipodebibliografiacantidaddecopiasdisponiblesenbibliotecanrodebib#disponibilidadprestamos0bibbiblioteca'
     flag : bool = True;
     if 'medicina' in file:
-        with open(file, 'r') as load, open('final/book.csv', 'a+') as book, open('final/author.csv', 'a+') as author, open('final/authorBook.csv', 'a+') as authorBook, open('final/career.csv', 'a+') as career, open('final/careerBook.csv', 'a+') as careerBook:
+        with open(file, 'r') as load, open('raw/book.csv', 'a+') as book, open('raw/author.csv', 'a+') as author, open('raw/authorBook.csv', 'a+') as authorBook, open('raw/career.csv', 'a+') as career, open('raw/careerBook.csv', 'a+') as careerBook:
             idBook = 0
             idAuthor = 0
             idCareer = 0
@@ -75,7 +75,7 @@ def CleanFile(file : str) -> None:
 
 def Main():
     argv.pop(0)
-    with open('libroOld.csv', 'w') as libro, open('final/author.csv', 'w') as author, open('final/book.csv', 'w') as book, open('final/career.csv', 'w') as career, open('final/authorBook.csv', 'w') as authorBook, open('final/careerBook.csv', 'w') as careerBook, open('final/theme.csv', 'w') as theme, open('final/themeBook.csv', 'w') as themeBook:
+    with open('libroOld.csv', 'w') as libro, open('raw/author.csv', 'w') as author, open('raw/book.csv', 'w') as book, open('raw/career.csv', 'w') as career, open('raw/authorBook.csv', 'w') as authorBook, open('raw/careerBook.csv', 'w') as careerBook, open('raw/theme.csv', 'w') as theme, open('raw/themeBook.csv', 'w') as themeBook:
         libro.write('asignatura\tsemestre\tdetalle\ttipoBibliografia\tcopias\tid\tdisponibilidad\tcarrera\n')
         author.write('id\tname\n')
         book.write('id\tinternalId\tname\tyear\tedition\tobligatory\tcopies\n')
