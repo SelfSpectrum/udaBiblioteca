@@ -39,40 +39,42 @@ app.use(bodyParser.json());
 app.post('/api/login', async (req, res) => {
 	const { username, password } = req.body;
 
+	// Hash password for comparison
+	const hashedPassword = await bcrypt.hash(password, 10);
+
 	// Validate credentials
-	const user = await validateUser(username, password);
-	if (user) {
-		req.session.userId = user.id; // Store user info in the session
+	const [user] = await db.query('SELECT * FROM Users WHERE username LIKE ? AND passwordHash LIKE ?', [username, hashedPassword]);
+	if ((user as any[]).length > 0) {
+		req.session.userId = username; // Store user info in the session
+		req.session.userId = user.role; // Store role info in the session
 		res.json({ success: true, message: 'Login successful!' });
-	} else {
-		res.status(401).json({ success: false, message: 'Invalid credentials.' });
 	}
+	else res.status(401).json({ success: false, message: 'Invalid credentials.' });
 });
 // Create a new user
-app.post('/api/users', async (req, res) => {
-  const { username, password, role } = req.body;
+app.post('/api/create_users', async (req, res) => {
+	const { username, password, role } = req.body;
 
-  if (!username || !password || !role) {
-    return res.status(400).json({ success: false, message: 'Username, password and role are required.' });
-  }
+	if (!username || !password || !role) {
+		return res.status(400).json({ success: false, message: 'Username, password and role are required.' });
+	}
 
-  try {
-    // Check if username already exists
-    const [existingUsers] = await db.query('SELECT * FROM users WHERE Username = ?', [username]);
-    if ((existingUsers as any[]).length > 0) {
-      return res.status(400).json({ success: false, message: 'Username already exists.' });
-    }
+	try {
+		// Check if username already exists
+		const [existingUsers] = await db.query('SELECT * FROM Users WHERE username LIKE ?', [username]);
+		if ((existingUsers as any[]).length > 0) return res.status(400).json({ success: false, message: 'Username already exists.' });
 
-    // Hash password
-    const hashedPassword = await bcrypt.hash(password, 10);
+		// Hash password
+		const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Insert user into database
-    await db.query('INSERT INTO users (Username, HashedPassword, role) VALUES (?, ?, ?)', [username, hashedPassword, role]);
-    res.status(201).json({ success: true, message: 'User created successfully!' });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ success: false, message: 'Internal server error.' });
-  }
+		// Insert user into database
+		await db.query('INSERT INTO Users (Username, HashedPassword, role) VALUES (?, ?, ?)', [username, hashedPassword, role]);
+		res.status(201).json({ success: true, message: 'User created successfully!' });
+	}
+	catch (error) {
+		console.error(error);
+	res.status(500).json({ success: false, message: 'Internal server error.' });
+	}
 });
 
 app.listen(3000, () => console.log('Server running on port 3000'));
