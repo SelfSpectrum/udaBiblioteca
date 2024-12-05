@@ -5,7 +5,6 @@ import Navbar from './components/Navbar.vue'
 
 <template>
     <Navbar/>
-    <HelloWorld msg="Testing out raylib Stuff" />
 </template>
 
 <style scoped>
