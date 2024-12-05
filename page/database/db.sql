@@ -1,3 +1,13 @@
+-- Table: Book
+CREATE TABLE Book (
+    id INT AUTO_INCREMENT UNIQUE PRIMARY KEY,
+    name VARCHAR(256) NOT NULL,
+    year SMALLINT,
+    edition TINYINT,
+    isbn VARCHAR(13) UNIQUE,
+    issn VARCHAR(8) UNIQUE
+);
+
 -- Table: Author
 CREATE TABLE Author (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -11,16 +21,6 @@ CREATE TABLE AuthorBook (
     PRIMARY KEY (idAuthor, idBook),
     FOREIGN KEY (idAuthor) REFERENCES Author(id),
     FOREIGN KEY (idBook) REFERENCES Book(id)
-);
-
--- Table: Book
-CREATE TABLE Book (
-    id INT AUTO_INCREMENT UNIQUE PRIMARY KEY,
-    name VARCHAR(256) NOT NULL,
-    year SMALLINT,
-    edition TINYINT,
-    isbn VARCHAR(13) UNIQUE,
-    issn VARCHAR(8) UNIQUE
 );
 
 -- Table: Career
@@ -96,7 +96,7 @@ CREATE TABLE NroBib (
 );
 
 -- Table: NroBibBook
-CREATE TABLE NroBib (
+CREATE TABLE NroBibBook (
     idBook INT NOT NULL,
     nroBib INT NOT NULL,
     PRIMARY KEY (idBook, nroBib),
@@ -108,8 +108,8 @@ CREATE TABLE NroBib (
 CREATE TABLE Users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(64) UNIQUE NOT NULL,
-    password_hash CHAR(256) NOT NULL, -- Store hashed passwords, not plaintext
-    role ENUM('super', 'high', 'low') NOT NULL
+    password_hash VARCHAR(256) NOT NULL, -- Store hashed passwords, not plaintext
+    role TINYINT NOT NULL
 );
 
 -- Table: SubjectUser

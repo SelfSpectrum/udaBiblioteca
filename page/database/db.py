@@ -32,10 +32,14 @@ class DB():
                     password = password,
                     database = database)
                 self.cursor = self.connection.cursor()
-                #Create DB tables and load stuff
-                self.cursor.execute('CREATE TABLE users (name VARCHAR(128) NOT NULL, surname VARCHAR(128) NOT NULL, username VARCHAR(128), password VARCHAR(256), email VARCHAR(128), birthdate DATE, sex varchar(32), interests varchar(32), PRIMARY KEY (username))')
-                self.connection.commit()
                 print('Connected Succesfully!')
+                #Create DB tables and load stuff
+                with open('db.sql') as dbData:
+                    for command in dbData.read().split(';'):
+                        if command.strip() != '':
+                            print(f'Executing:\n{command}')
+                            self.cursor.execute(command)
+                self.connection.commit()
             except ConnectionError as e:
                 print(e)
     def DropDatabase(self, database):
@@ -62,10 +66,10 @@ class DB():
         return self
     def InsertTable(self, table : str, column : str, values : list):
         try:
-            if column != '': column = f' ({",".join(column.split(" "))})'
+            if column != '': column = f'({",".join(column.split(" "))})'
             values = [f'{i}' if not isinstance(i, str) else f'"{i}"' for i in values]
             data = f'({",".join(values)})'
-            self.cursor.execute(f'INSERT INTO {table}{column} VALUES {data}')
+            self.cursor.execute(f'INSERT INTO {table} {column} VALUES {data}')
             self.connection.commit()
         except Exception as e:
             print(e)
@@ -74,9 +78,9 @@ class DB():
         try:
             if column == '': column = '*'
             else: column = f'{",".join(column.split(" "))}'
-            if where != '': where = f' WHERE {where}'
-            if orderByColumn != '': orderByColumn = f' ORDER BY {",".join(orderByColumn.split(" "))} {orderBy.name}'
-            self.cursor.execute(f'SELECT {column} FROM {table}{where}{orderByColumn}')
+            if where != '': where = f'WHERE {where}'
+            if orderByColumn != '': orderByColumn = f'ORDER BY {",".join(orderByColumn.split(" "))} {orderBy.name}'
+            self.cursor.execute(f'SELECT {column} FROM {table} {where} {orderByColumn}')
             if fetch < 1:
                 return self.cursor.fetchall()
             elif fetch == 1:
@@ -91,27 +95,22 @@ class DB():
             if column != '': 
                 data = [f'{j} = {k}' for j, k in zip(column.split(" "), [f'{i}' if not isinstance(i, str) else f'"{i}"' for i in values])]
                 data = f'{",".join(data)}'
-            if where != '': where = f' WHERE {",".join(where.split(","))}'
-            self.cursor.execute(f'UPDATE {table} SET {data}{where}')
+            if where != '': where = f'WHERE {",".join(where.split(","))}'
+            self.cursor.execute(f'UPDATE {table} SET {data} {where}')
             self.connection.commit()
         except Exception as e:
             print(e)
         return self
     def DeleteTable(self, table : str, where : str = ''):
         try:
-            if where != '': where = f' WHERE {",".join(where.split(","))}'
-            self.cursor.execute(f'DELETE FROM {table}{where}')
+            if where != '': where = f'WHERE {",".join(where.split(","))}'
+            self.cursor.execute(f'DELETE FROM {table} {where}')
             self.connection.commit()
         except Exception as e:
             print(e)
         return self
 def Main():
-    db = DB(database = 'chrabe')
-    print(db.Select('users', fetch = -1))
-    #db.DeleteTable('users', where = 'username LIKE "SelfSpectrum"')
-    #print(db.Select('person', column = 'rut name', fetch = -1))
-    #db.InsertTable(table = 'person', column = 'rut name admission afp occupation', values = [20751584, 'Celes', '2017-03-12', 0, 2])
-    #db.DeleteTable(table = 'person', where = '')
-    #print(db.Update(table = 'person', column = 'name afp', values = ['Celeste Marambio', '3'], where = 'rut = 20751584').Select(table = 'person', fetch = -1))
-    #db.DropDatabase('chrabe')
+    name = 'udaBibRefs'
+    db = DB(database = name)
+    #db.DropDatabase(name)
 if __name__ == '__main__': Main()
