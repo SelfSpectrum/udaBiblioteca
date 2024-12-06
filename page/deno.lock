@@ -208,6 +208,8 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
+        "npm:@headlessui/vue@^1.7.23",
+        "npm:@heroicons/vue@^2.2.0",
         "npm:@vitejs/plugin-vue@^5.1.4",
         "npm:autoprefixer@^10.4.20",
         "npm:axios@^1.7.8",
@@ -216,8 +218,10 @@
         "npm:express-mysql-session@^3.0.3",
         "npm:express-session@^1.18.1",
         "npm:express@^4.21.1",
+        "npm:headlessui@^0.0.0",
+        "npm:mysql2@^3.11.5",
         "npm:postcss@^8.4.49",
-        "npm:tailwindcss@^3.4.15",
+        "npm:tailwindcss@^3.4.16",
         "npm:ts-node@^10.9.2",
         "npm:typescript@^5.7.2",
         "npm:vite@^5.4.8",

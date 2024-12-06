@@ -1,5 +1,5 @@
 <template>
-  <div class = "flex flex-col items-center p-6 bg-gray-100 min-h-screen">
+  <div class = "flex flex-row items-center p-6 bg-gray-100 min-h-screen">
     <div class = "bg-white p-8 shadow-md rounded w-full max-w-md">
       <h2 class = "text-2xl font-bold mb-6">Login</h2>
       <form @submit.prevent = "login">
