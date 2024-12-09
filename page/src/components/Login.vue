@@ -1,10 +1,10 @@
 <template>
   <div class = "flex flex-row items-center p-6 bg-gray-100 min-h-screen">
     <div class = "bg-white p-8 shadow-md rounded w-full max-w-md">
-      <h2 class = "text-2xl font-bold mb-6">Login</h2>
+      <h2 class = "text-2xl font-bold mb-6">Inicio de Sesión</h2>
       <form @submit.prevent = "login">
         <div class = "mb-4">
-          <label class = "block text-sm font-medium text-gray-700" for = "username">Username</label>
+          <label class = "block text-sm font-medium text-gray-700" for = "username">Nombre de Usuario</label>
           <input
             v-model = "form.username"
             id = "username"
@@ -13,7 +13,7 @@
           />
         </div>
         <div class = "mb-6">
-          <label class="block text-sm font-medium text-gray-700" for = "password">Password</label>
+          <label class="block text-sm font-medium text-gray-700" for = "password">Contraseña</label>
           <input
             v-model = "form.password"
             id = "password"
@@ -37,26 +37,25 @@ import { defineComponent, reactive } from 'vue'
 import axios from 'axios'
 
 export default defineComponent({
-  name: 'Login',
-  setup() {
-    const form = reactive({ username: '', password: '' })
-    const errorMessage = reactive('')
-
-    const login = async () => {
-      try {
-        const response = await axios.post('/api/login', form)
-        if (response.data.success) {
-          alert('Logged in successfully!')
-          localStorage.setItem('session', JSON.stringify(response.data))
-          // Redirect to a protected route or dashboard
-        }
-      } catch (error) {
-        errorMessage.value = error.response?.data?.message || 'An error occurred.'
-      }
-    }
-
-    return { form, login, errorMessage }
-  },
+	name: 'Login',
+	setup() {
+		const form = reactive({ username: '', password: '' })
+		const errorMessage = reactive({})
+		const login = async () => {
+			try {
+				const response = await axios.post('/api/login', form)
+				if (response.data.success) {
+					alert('Logged in successfully!')
+					localStorage.setItem('session', JSON.stringify(response.data))
+					// Redirect to a protected route or dashboard
+				}
+			}
+			catch (error) {
+				errorMessage.value = error.response?.data?.message
+			}
+		}
+		return { form, login, errorMessage }
+	},
 })
 </script>
 

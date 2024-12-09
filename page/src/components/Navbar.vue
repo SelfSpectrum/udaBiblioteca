@@ -14,11 +14,15 @@
         </button>
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Carreras</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Asignaturas</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Autores</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Libros</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Usuarios</a>
+        <!-- Conditionally render links -->
+        <template v-if="user">
+          <a href="#" class="text-sm/6 font-semibold text-gray-900">Carreras</a>
+          <a href="#" class="text-sm/6 font-semibold text-gray-900">Asignaturas</a>
+          <a href="#" class="text-sm/6 font-semibold text-gray-900">Autores</a>
+          <a href="#" class="text-sm/6 font-semibold text-gray-900">Libros</a>
+          <a href="#" class="text-sm/6 font-semibold text-gray-900">Usuarios</a>
+          <span class="text-sm/6 font-semibold text-gray-900">{{ user.username }}</span>
+        </template>
       </PopoverGroup>
     </nav>
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -26,7 +30,7 @@
       <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
+            <span class="sr-only">Biblioteca</span>
             <img class="h-8 w-auto" src="/logo-udacorporativo.png" alt="" />
           </a>
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
@@ -37,11 +41,14 @@
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Carreras</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Asignaturas</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Autores</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Libros</a>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Usuarios</a>
+              <template v-if="user">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Carreras</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Asignaturas</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Autores</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Libros</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Usuarios</a>
+                <span class="text-sm/6 font-semibold text-gray-900">{{ user.username }}</span>
+              </template>
             </div>
           </div>
         </div>
@@ -50,44 +57,40 @@
   </header>
 </template>
 
-<script setup>
-import { ref } from 'vue'
+
+<script setup lang="ts">
+import { ref, onMounted } from 'vue'
 import axios from 'axios'
 
-import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-} from '@headlessui/vue'
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from '@heroicons/vue/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/vue/20/solid'
+import { Dialog, DialogPanel, PopoverGroup, } from '@headlessui/vue'
+import { Bars3Icon, XMarkIcon, } from '@heroicons/vue/24/outline'
 
-const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
-
+// Reactive state for mobile menu
 const mobileMenuOpen = ref(false)
 
+// Reactive user state
+const user = ref<{ username: string; role: string } | null>(null)
+
+// Function to check session
+const fetchSession = async () => {
+	try {
+		const response = await axios.get('/api/session') // Backend route to fetch session data
+		if (response.data.success) {
+			user.value = {
+				username: response.data.username,
+				role: response.data.role,
+			}
+		}
+	}
+	catch (error) {
+		console.error('Failed to fetch session:', error)
+		user.value = null // Clear user data if session fetch fails
+	}
+}
+
+// Fetch session data on component mount
+onMounted(() => {
+	fetchSession()
+})
 </script>
+
