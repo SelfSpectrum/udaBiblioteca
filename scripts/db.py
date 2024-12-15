@@ -74,6 +74,7 @@ class DB():
             if column != '': column = f'({",".join(column.split(" "))})'
             values = [f'{i}' if not isinstance(i, str) else f'"{i}"' for i in values]
             data = f'({",".join(values)})'
+            print(f'INSERT INTO {table} {column} VALUES {data}')
             self.cursor.execute(f'INSERT INTO {table} {column} VALUES {data}')
             self.connection.commit()
         except Exception as e:
@@ -119,6 +120,7 @@ class DB():
 def Main():
     name = 'udaBibRefs'
     db = DB(database = name)
+    #db.InsertTable('Users', 'username,passwordHash,role', ['Jacqueline','$2b$10$GBYNGRJTMjIiRlqW2cH/hOazF2LK9.UdK6tyyNFxnoTrI/iYi32Ky','3'])
     print(db.Select(table = 'Users', fetch = -1))
     #db.DropDatabase(name)
 if __name__ == '__main__': Main()
