@@ -7,7 +7,7 @@ class Author:
 
 
 class Book:
-    def __init__(self, name, year, edition)
+    def __init__(self, name, year, edition):
         self.name = name
         self.year = year
         self.edition = edition
@@ -62,14 +62,6 @@ def main():
             if add:
                 authors.append(Author(data[1]))
                 authors[len(authors) - 1].refs.append(data[0])
-        print(len(authors))
-        count = 1
-        for i in authors:
-            if count == len(authors):
-                authordone.write(f'\t({i.name});')
-            else:
-                authordone.write(f'\t({i.name}),\n')
-            count += 1
         
         # Now, the same thing with book, to make the links correctly (or no, fuck that, links will wait)
         skipFirst = True
@@ -89,8 +81,9 @@ def main():
                 books[len(books) - 1].refs.append(data[0])
 
         # Funny, now same thing with... NroBib and... Editorial... agh...
+        book.seek(0)
         skipFirst = True
-        for i in book;
+        for i in book:
             if skipFirst:
                 skipFirst = False
                 continue
@@ -102,33 +95,64 @@ def main():
                     add = False
                     break
             if add:
-                nroBibs.append(NroBib(data[1], data[7]))
-                nroBibs[len(nroBibs)].refs.append(data[0])
+                if len(data) == 8:
+                    nroBibs.append(NroBib(data[1], data[7]))
+                    nroBibs[len(nroBibs) - 1].refs.append(data[0])
+                elif len(data) == 7:
+                    nroBibs.append(NroBib(data[1], data[6]))
+                    nroBibs[len(nroBibs) - 1].refs.append(data[0])
 
         # I hate this
+        book.seek(0)
         skipFirst = True
-        for i in book;
+        for i in book:
             if skipFirst:
                 skipFirst = False
                 continue
             add = True
             data = i.strip('\n').split('\t')
             for j in range(len(editorials)):
-                if editorials[j].name == data[5]:
-                    editorials[j].refs.append(data[0])
-                    add = False
-                    break
+                if len(data) == 8:
+                    if editorials[j].name == data[5]:
+                        editorials[j].refs.append(data[0])
+                        add = False
+                        break
             if add:
-                editorials.append(Editorial(data[5]))
-                editorials[len(editorials)].refs.append(data[0])
+                if len(data) == 8:
+                    editorials.append(Editorial(data[5]))
+                    editorials[len(editorials) - 1].refs.append(data[0])
 
         print(len(authors))
         count = 1
         for i in authors:
             if count == len(authors):
-                authordone.write(f'\t({i.name});')
+                authordone.write(f'\t(\'{i.name}\');')
             else:
-                authordone.write(f'\t({i.name}),\n')
+                authordone.write(f'\t(\'{i.name}\'),\n')
+            count += 1
+        print(len(books))
+        count = 1
+        for i in books:
+            if count == len(books):
+                bookdone.write(f'\t(\'{i.name}\', {i.year}, {i.edition});')
+            else:
+                bookdone.write(f'\t(\'{i.name}\', {i.year}, {i.edition}),\n')
+            count += 1
+        print(len(nroBibs))
+        count = 1
+        for i in nroBibs:
+            if count == len(nroBibs):
+                nrobibdone.write(f'\t({i.nroBib}, {i.copies});')
+            else:
+                nrobibdone.write(f'\t({i.nroBib}, {i.copies}),\n')
+            count += 1
+        print(len(editorials))
+        count = 1
+        for i in editorials:
+            if count == len(editorials):
+                editorialdone.write(f'\t(\'{i.name}\');')
+            else:
+                editorialdone.write(f'\t(\'{i.name}\'),\n')
             count += 1
 
 
