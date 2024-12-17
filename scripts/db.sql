@@ -20,52 +20,52 @@ CREATE TABLE AuthorBook (
     FOREIGN KEY (idBook) REFERENCES Book(id)
 );
 
-CREATE TABLE Department {
+CREATE TABLE Department (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(64) NOT NULL
-};
+);
 
-CREATE TABLE Faculty {
+CREATE TABLE Faculty (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(64) NOT NULL
-};
+);
 
-CREATE TABLE FacultyDepartment {
+CREATE TABLE FacultyDepartment (
     idFaculty INT NOT NULL,
     idDepartment INT NOT NULL,
     PRIMARY KEY (idFaculty, idDepartment),
     FOREIGN KEY (idFaculty) REFERENCES Faculty(id),
     FOREIGN KEY (idDepartment) REFERENCES Department(id)
-};
+);
 
 CREATE TABLE Career (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(128) NOT NULL
 );
 
-CREATE TABLE DepartmentCareer {
-    idDepartment INT NOT NULL,
-    idCareer INT NOT NULL,
-    PRIMARY KEY (idDepartment, idCareer)
-    FOREIGN KEY (idDepartment) REFERENCES Department(id)
-    FOREIGN KEY (idCareer) REFERENCES Career(id),
-};
-
 CREATE TABLE Subject (
     id INT AUTO_INCREMENT PRIMARY KEY,
     idCareer INT NOT NULL,
     name VARCHAR(128) NOT NULL,
-    semester TINYINT NOT NULL,
+    semester SMALLINT NOT NULL,
     FOREIGN KEY (idCareer) REFERENCES Career(id)
 );
 
-CREATE TABLE CareerSubject {
+CREATE TABLE DepartmentSubject (
+    idDepartment INT NOT NULL,
+    idSubject INT NOT NULL,
+    PRIMARY KEY (idDepartment, idSubject),
+    FOREIGN KEY (idDepartment) REFERENCES Department(id),
+    FOREIGN KEY (idSubject) REFERENCES Subject(id)
+);
+
+CREATE TABLE CareerSubject (
     idDepartment INT NOT NULL,
     idCareer INT NOT NULL,
-    PRIMARY KEY (idDepartment, idCareer)
-    FOREIGN KEY (idDepartment) REFERENCES Department(id)
-    FOREIGN KEY (idCareer) REFERENCES Career(id),
-};
+    PRIMARY KEY (idDepartment, idCareer),
+    FOREIGN KEY (idDepartment) REFERENCES Department(id),
+    FOREIGN KEY (idCareer) REFERENCES Career(id)
+);
 
 CREATE TABLE SubjectBook (
     idBook INT NOT NULL,
@@ -94,7 +94,7 @@ CREATE TABLE ThemeBook (
 CREATE TABLE LinkSource (
     id INT AUTO_INCREMENT PRIMARY KEY,
     idBook INT NOT NULL,
-    linkSource VARCHAR(512) NOT NULL,
+    linkSource TEXT NOT NULL,
     FOREIGN KEY (idBook) REFERENCES Book(id)
 );
 
@@ -112,9 +112,8 @@ CREATE TABLE EditorialBook (
 );
 
 CREATE TABLE NroBib (
-    nroBib INT NOT NULL,
-    copias SMALLINT NOT NULL,
-    PRIMARY KEY (nroBib)
+    nroBib INT PRIMARY KEY,
+    copias SMALLINT NOT NULL
 );
 
 CREATE TABLE NroBibBook (
