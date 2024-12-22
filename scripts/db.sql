@@ -126,6 +126,7 @@ CREATE TABLE NroBibBook (
 
 CREATE TABLE Users (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    rut INT UNIQUE NOT NULL,
     username VARCHAR(64) UNIQUE NOT NULL,
     passwordHash VARCHAR(256) NOT NULL, -- Store hashed passwords, not plaintext
     role TINYINT NOT NULL
