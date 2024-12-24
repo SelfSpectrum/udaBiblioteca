@@ -43,6 +43,14 @@ CREATE TABLE Career (
     name VARCHAR(128) NOT NULL
 );
 
+CREATE TABLE CareerDepartment (
+    idCareer INT NOT NULL,
+    idDepartment INT NOT NULL,
+    PRIMARY KEY (idCareer, idDepartment),
+    FOREIGN KEY (idCareer) REFERENCES Career(id),
+    FOREIGN KEY (idDepartment) REFERENCES Department(id)
+);
+
 CREATE TABLE Subject (
     id INT AUTO_INCREMENT PRIMARY KEY,
     idCareer INT NOT NULL,
@@ -127,7 +135,7 @@ CREATE TABLE NroBibBook (
 CREATE TABLE Users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     rut INT UNIQUE NOT NULL,
-    username VARCHAR(64) UNIQUE NOT NULL,
+    username VARCHAR(64) NOT NULL,
     passwordHash VARCHAR(256) NOT NULL, -- Store hashed passwords, not plaintext
     role TINYINT NOT NULL
 );

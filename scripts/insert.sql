@@ -2,7 +2,7 @@
 INSERT INTO Users (rut, username, passwordHash, role) VALUES 
 	(0, 'root', '$2b$10$g2XXnVqwA9Y6uG5uPS/V8.yoN87JF631hfYtPfsVCTWTasK6Z0yAm', 0),
 	(1, 'admin', '$2b$10$GqHscCe39BShFggVZDe8B.FNc8KYdUvYRd9jHHHvCuPgLsUftXGiq', 1),
-	(15871295, 'Andres Alfaro', '$2b$10$uvL9tkSFROnHMm1FGXuHKuPMljsc3LpmGY4Sd.t15vztAs7ds.daa', 3),
+	(15871295, 'Andrés Alfaro', '$2b$10$uvL9tkSFROnHMm1FGXuHKuPMljsc3LpmGY4Sd.t15vztAs7ds.daa', 3),
 	(15886024, 'Servando Campillay', '$2b$10$76iREZOmqqJf.fMszULzeez2Ighq810WptvqkzvLKWdUkZX6WGVja', 4),
 	(12065689, 'Vladimir Riffo', '$2b$10$zN4MaM5h7JL0QYh9epsV3eP9tSqyhjasoLGPB1ZTAaOFs7ea4GseC', 4),
 	(13015354, 'Héctor Córnide', '$2b$10$QEvrTQT93SmTRtZK6UmEmuOST2007NceoVmsFetMsA.zo7SOTttKO', 4),
@@ -10,7 +10,7 @@ INSERT INTO Users (rut, username, passwordHash, role) VALUES
 	(9870893, 'Wilson Castillo', '$2b$10$8xhtbMd0aiL1sGg.7pev0.uit2XJzZJ.5Tc8MKzj3s0YSPxbIKtDK', 4),
 	(13178495, 'Nahur Meléndez', '$2b$10$xqMns2IbGOLBhd7ldS6qF.6hqyb7SFozT9hb0IOd1GQjaBpvMMWTm', 4),
 	(12939880, 'Jacqueline Manríquez', '$2b$10$oDUoCQH76XUQwZWgieQFnO5HuVLZSqacp2dZNdWUXj7yN0ZoeUp7G', 4),
-	(10198361, 'Dante Carrizo', '$2b$10$/LjlpURkKSkuJb5x53MzWusXB22qRsZj94sZz66BJEcrbWZHDxdrC', 2),
+	(10198361, 'Dante Carrizo', '$2b$10$/LjlpURkKSkuJb5x53MzWusXB22qRsZj94sZz66BJEcrbWZHDxdrC', 2);
 
 -- Insert Careers, this probabily won't change in a long tiem
 INSERT INTO Career (name) VALUES
