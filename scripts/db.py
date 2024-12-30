@@ -121,6 +121,6 @@ def Main():
     name = 'udaBibRefs'
     db = DB(database = name)
     #db.InsertTable('Users', 'username,passwordHash,role', ['Jacqueline','$2b$10$GBYNGRJTMjIiRlqW2cH/hOazF2LK9.UdK6tyyNFxnoTrI/iYi32Ky','3'])
-    print(db.Select(table = 'Users', fetch = -1))
+    print(db.Select(table = 'Career', fetch = -1))
     #db.DropDatabase(name)
 if __name__ == '__main__': Main()

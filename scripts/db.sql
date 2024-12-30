@@ -20,35 +20,16 @@ CREATE TABLE AuthorBook (
     FOREIGN KEY (idBook) REFERENCES Book(id)
 );
 
-CREATE TABLE Department (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(64) NOT NULL
-);
-
 CREATE TABLE Faculty (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(64) NOT NULL
 );
 
-CREATE TABLE FacultyDepartment (
-    idFaculty INT NOT NULL,
-    idDepartment INT NOT NULL,
-    PRIMARY KEY (idFaculty, idDepartment),
-    FOREIGN KEY (idFaculty) REFERENCES Faculty(id),
-    FOREIGN KEY (idDepartment) REFERENCES Department(id)
-);
-
 CREATE TABLE Career (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(128) NOT NULL
-);
-
-CREATE TABLE CareerDepartment (
-    idCareer INT NOT NULL,
-    idDepartment INT NOT NULL,
-    PRIMARY KEY (idCareer, idDepartment),
-    FOREIGN KEY (idCareer) REFERENCES Career(id),
-    FOREIGN KEY (idDepartment) REFERENCES Department(id)
+    idFaculty INT,
+    name VARCHAR(128) NOT NULL,
+    FOREIGN KEY (idFaculty) REFERENCES Faculty(id)
 );
 
 CREATE TABLE Subject (
@@ -56,22 +37,6 @@ CREATE TABLE Subject (
     idCareer INT NOT NULL,
     name VARCHAR(128) NOT NULL,
     semester SMALLINT NOT NULL,
-    FOREIGN KEY (idCareer) REFERENCES Career(id)
-);
-
-CREATE TABLE DepartmentSubject (
-    idDepartment INT NOT NULL,
-    idSubject INT NOT NULL,
-    PRIMARY KEY (idDepartment, idSubject),
-    FOREIGN KEY (idDepartment) REFERENCES Department(id),
-    FOREIGN KEY (idSubject) REFERENCES Subject(id)
-);
-
-CREATE TABLE CareerSubject (
-    idDepartment INT NOT NULL,
-    idCareer INT NOT NULL,
-    PRIMARY KEY (idDepartment, idCareer),
-    FOREIGN KEY (idDepartment) REFERENCES Department(id),
     FOREIGN KEY (idCareer) REFERENCES Career(id)
 );
 
@@ -134,10 +99,12 @@ CREATE TABLE NroBibBook (
 
 CREATE TABLE Users (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    idFaculty INT,
     rut INT UNIQUE NOT NULL,
     username VARCHAR(64) NOT NULL,
     passwordHash VARCHAR(256) NOT NULL, -- Store hashed passwords, not plaintext
-    role TINYINT NOT NULL
+    role TINYINT NOT NULL,
+    FOREIGN KEY (idFaculty) REFERENCES Faculty(id)
 );
 
 CREATE TABLE SubjectUser (

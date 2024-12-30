@@ -13,67 +13,38 @@ INSERT INTO Users (rut, username, passwordHash, role) VALUES
 	(10198361, 'Dante Carrizo', '$2b$10$/LjlpURkKSkuJb5x53MzWusXB22qRsZj94sZz66BJEcrbWZHDxdrC', 2);
 
 -- Insert Careers, this probabily won't change in a long tiem
-INSERT INTO Career (name) VALUES
-	('Medicina'), -- 1
-	('Enfermería'),
-	('Kinesiología'),
-	('Nutrición y Dietética'),
-	('Obstetricia y Puericultura'),
-	('Licenciatura en Educación y Pedagogía en Educación General Básica'),
-	('Licenciatura en Educación y Pedagogía en Educación Física'),
-	('Licenciatura en Educación y Pedagogía en Inglés'),
-	('Licenciatura en Educación y Pedagogía en Educación Parvularia'),
-	('Psicología'), -- 10
-	('Traductología e Interprete Inglés-Español'),
-	('Construcción Civil'),
-	('Comercial'),
-	('Geología'),
-	('Industrial'),
-	('Informática y Computación'),
-	('Metalurgia'),
-	('Minas'),
-	('Derecho'),
-	('Trabajo Social'), -- 20
-	('Técnico Universitario en Administración de Empresas'),
-	('Técnico Universitario Asistente de Geología'),
-	('Técnico Universitario en Energías Renovables y Eficiencia Energética'),
-	('Técnico Universitario en Prevención de Riesgos'),
-	('Técnico Universitario Auditor Contable y Tributario'),
-	('Técnico Universitario en Automatización Industrial'),
-	('Técnico Universitario en Mantención Mecánica de Equipos Industriales'),
-	('Técnico Universitario en Metalurgia'),
-	('Técnico Universitario en Minas'),
-	('Técnico Universitario en Electricidad'),
-	('Técnico Universitario en Asistencia Judicial');
-
--- Insert Departments, again this probabily won't really change
-INSERT INTO Department (name) VALUES
-	('Minas'), -- 1
-	('Metalurgia'),
-	('Computación e Informática'),
-	('Geología'),
-	('Industria y Negocios'),
-	('Comercial'),
-	('Matemáticas'),
-	('Medicina'),
-	('Educación Básica'),
-	('Educación Física'), -- 10
-	('Educación Parvularia'),
-	('Idiomas'),
-	('Psicología'),
-	('Construcción Civil'),
-	('Administración y Gestión'),
-	('Minería'),
-	('Energía'),
-	('Ingenierías en Ejecución'),
-	('Ciencias Jurídicas'),
-	('Trabajo Social'), -- 20
-	('Física'),
-	('Química y Biología'),
-	('Enfermería'),
-	('Kinesiología'),
-	('Obstetricia y Puericultura'),
-	('Nutrición y Dietética');
+INSERT INTO Career (name, idFaculty) VALUES
+	(2, 'Medicina'),
+	(7, 'Enfermería'),
+	(7, 'Kinesiología'),
+	(7, 'Nutrición y Dietética'),
+	(7, 'Obstetricia y Puericultura'),
+	(3, 'Licenciatura en Educación y Pedagogía en Educación General Básica'),
+	(3, 'Licenciatura en Educación y Pedagogía en Educación Física'),
+	(8, 3, 'Licenciatura en Educación y Pedagogía en Inglés'),
+	(3, 'Licenciatura en Educación y Pedagogía en Educación Parvularia'),
+	(3, 'Psicología'),
+	(3, 'Traductología e Interprete Inglés-Español'),
+	(NULL, 'Construcción Civil'),
+	(1, 'Comercial'),
+	(1, 'Geología'),
+	(1, 'Industrial'),
+	(1, 'Informática y Computación'),
+	(1, 'Metalurgia'),
+	(1, 'Minas'),
+	(5, 'Derecho'),
+	(5, 'Trabajo Social'),
+	(NULL, 'Técnico Universitario en Administración de Empresas'),
+	(NULL, 'Técnico Universitario Asistente de Geología'),
+	(NULL, 'Técnico Universitario en Energías Renovables y Eficiencia Energética'),
+	(NULL, 'Técnico Universitario en Prevención de Riesgos'),
+	(NULL, 'Técnico Universitario Auditor Contable y Tributario'),
+	(NULL, 'Técnico Universitario en Automatización Industrial'),
+	(NULL, 'Técnico Universitario en Mantención Mecánica de Equipos Industriales'),
+	(NULL, 'Técnico Universitario en Metalurgia'),
+	(NULL, 'Técnico Universitario en Minas'),
+	(NULL, 'Técnico Universitario en Electricidad'),
+	(NULL, 'Técnico Universitario en Asistencia Judicial');
 
 -- Insert Faculties, oh boi, do you imagine they create a new faculty? Me neither
 INSERT INTO Faculty (Name) VALUES
@@ -85,35 +56,6 @@ INSERT INTO Faculty (Name) VALUES
 	('Ciencias Naturales'),
 	('Ciencias de la Salud'),
 	('Sede Vallenar');
-
--- Insert relationship between faculties and departments
-INSERT INTO FacultyDepartment (idFaculty, idDepartment) VALUES
-	(1, 1), -- Minas
-	(1, 2),
-	(1, 3),
-	(1, 4),
-	(1, 5),
-	(1, 6),
-	(1, 7), -- Matemáticas
-	(2, 8), -- Medicina
-	(3, 9), -- Básica
-	(3, 10),
-	(3, 11),
-	(3, 12),
-	(3, 13), -- Psicología
-	(4, 14), -- Construcción
-	(4, 15),
-	(4, 16),
-	(4, 17),
-	(4, 18), -- Ing
-	(5, 19), -- Juridicas
-	(5, 20), -- Trabajo
-	(6, 21), -- Física
-	(6, 22), -- Química
-	(7, 23), -- Enfermería
-	(7, 24),
-	(7, 25),
-	(7, 26); -- Nutrición
 
 INSERT INTO Subject (idCareer, name, semester) VALUES
 	(16, 'Matemática', 101), -- 1
@@ -184,17 +126,6 @@ INSERT INTO Subject (idCareer, name, semester) VALUES
 	(16, 'Formación Profesional VI', 601),
 	(16, 'Trabajo de Título', 602),
 	(16, 'Formación Profesional VII', 602);
-
--- Insert relationship between departments and subjects, so every department can see who's in change to send their respective bibliography
-INSERT INTO DepartmentSubject (idDepartment, idSubject) VALUES
-	(3, 4),
-	(3, 5),
-	(7, 1),
-	(7, 2),
-	(7, 7),
-	(7, 8),
-	(12, 6),
-	(21, 3);
 
 -- Insert authors to allow the add of books as intended
 INSERT INTO Author (name) VALUES
