@@ -134,17 +134,17 @@ def main():
         count = 1
         for i in books:
             if count == len(books):
-                bookdone.write(f'\t(\'{i.name}\', {i.year}, {i.edition});')
+                bookdone.write(f'\t(\'{i.name}\', {i.year.strip().replace("o", "0").replace("O", "0").replace("l", "1")}, {i.edition.strip().replace("o", "0").replace("O", "0").replace("l", "1")});')
             else:
-                bookdone.write(f'\t(\'{i.name}\', {i.year}, {i.edition}),\n')
+                bookdone.write(f'\t(\'{i.name}\', {i.year.strip().replace("o", "0").replace("O", "0").replace("l", "1")}, {i.edition.strip().replace("o", "0").replace("O", "0").replace("l", "1")}),\n')
             count += 1
         print(len(nroBibs))
         count = 1
         for i in nroBibs:
             if count == len(nroBibs):
-                nrobibdone.write(f'\t({i.nroBib}, {i.copies});')
+                nrobibdone.write(f'\t({i.nroBib}, {i.copies.strip().replace("o", "0").replace("O", "0").replace("l", "1")});')
             else:
-                nrobibdone.write(f'\t({i.nroBib}, {i.copies}),\n')
+                nrobibdone.write(f'\t({i.nroBib}, {i.copies.strip().replace("o", "0").replace("O", "0").replace("l", "1")}),\n')
             count += 1
         print(len(editorials))
         count = 1
