@@ -34,9 +34,9 @@ CREATE TABLE Career (
 
 CREATE TABLE Subject (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    idCareer INT NOT NULL,
-    name VARCHAR(128) NOT NULL,
-    semester SMALLINT NOT NULL,
+    idCareer INT,
+    name VARCHAR(128),
+    semester SMALLINT,
     FOREIGN KEY (idCareer) REFERENCES Career(id)
 );
 

@@ -1,51 +1,3 @@
--- Insert Admin and associated users to allow login
-INSERT INTO Users (rut, username, passwordHash, role) VALUES 
-	(0, 'root', '$2b$10$g2XXnVqwA9Y6uG5uPS/V8.yoN87JF631hfYtPfsVCTWTasK6Z0yAm', 0),
-	(1, 'admin', '$2b$10$GqHscCe39BShFggVZDe8B.FNc8KYdUvYRd9jHHHvCuPgLsUftXGiq', 1),
-	(15871295, 'Andrés Alfaro', '$2b$10$uvL9tkSFROnHMm1FGXuHKuPMljsc3LpmGY4Sd.t15vztAs7ds.daa', 3),
-	(15886024, 'Servando Campillay', '$2b$10$76iREZOmqqJf.fMszULzeez2Ighq810WptvqkzvLKWdUkZX6WGVja', 4),
-	(12065689, 'Vladimir Riffo', '$2b$10$zN4MaM5h7JL0QYh9epsV3eP9tSqyhjasoLGPB1ZTAaOFs7ea4GseC', 4),
-	(13015354, 'Héctor Córnide', '$2b$10$QEvrTQT93SmTRtZK6UmEmuOST2007NceoVmsFetMsA.zo7SOTttKO', 4),
-	(8368745, 'Manuel Monasterio', '$2b$10$TO4bL6ic/MCCFJS9SJVB1eV/RTI7nT4EVBk2wHoqsgFJX6fCpsmpG', 4),
-	(9870893, 'Wilson Castillo', '$2b$10$8xhtbMd0aiL1sGg.7pev0.uit2XJzZJ.5Tc8MKzj3s0YSPxbIKtDK', 4),
-	(13178495, 'Nahur Meléndez', '$2b$10$xqMns2IbGOLBhd7ldS6qF.6hqyb7SFozT9hb0IOd1GQjaBpvMMWTm', 4),
-	(12939880, 'Jacqueline Manríquez', '$2b$10$oDUoCQH76XUQwZWgieQFnO5HuVLZSqacp2dZNdWUXj7yN0ZoeUp7G', 4),
-	(10198361, 'Dante Carrizo', '$2b$10$/LjlpURkKSkuJb5x53MzWusXB22qRsZj94sZz66BJEcrbWZHDxdrC', 2);
-
--- Insert Careers, this probabily won't change in a long tiem
-INSERT INTO Career (name, idFaculty) VALUES
-	(2, 'Medicina'),
-	(7, 'Enfermería'),
-	(7, 'Kinesiología'),
-	(7, 'Nutrición y Dietética'),
-	(7, 'Obstetricia y Puericultura'),
-	(3, 'Licenciatura en Educación y Pedagogía en Educación General Básica'),
-	(3, 'Licenciatura en Educación y Pedagogía en Educación Física'),
-	(8, 3, 'Licenciatura en Educación y Pedagogía en Inglés'),
-	(3, 'Licenciatura en Educación y Pedagogía en Educación Parvularia'),
-	(3, 'Psicología'),
-	(3, 'Traductología e Interprete Inglés-Español'),
-	(NULL, 'Construcción Civil'),
-	(1, 'Comercial'),
-	(1, 'Geología'),
-	(1, 'Industrial'),
-	(1, 'Informática y Computación'),
-	(1, 'Metalurgia'),
-	(1, 'Minas'),
-	(5, 'Derecho'),
-	(5, 'Trabajo Social'),
-	(NULL, 'Técnico Universitario en Administración de Empresas'),
-	(NULL, 'Técnico Universitario Asistente de Geología'),
-	(NULL, 'Técnico Universitario en Energías Renovables y Eficiencia Energética'),
-	(NULL, 'Técnico Universitario en Prevención de Riesgos'),
-	(NULL, 'Técnico Universitario Auditor Contable y Tributario'),
-	(NULL, 'Técnico Universitario en Automatización Industrial'),
-	(NULL, 'Técnico Universitario en Mantención Mecánica de Equipos Industriales'),
-	(NULL, 'Técnico Universitario en Metalurgia'),
-	(NULL, 'Técnico Universitario en Minas'),
-	(NULL, 'Técnico Universitario en Electricidad'),
-	(NULL, 'Técnico Universitario en Asistencia Judicial');
-
 -- Insert Faculties, oh boi, do you imagine they create a new faculty? Me neither
 INSERT INTO Faculty (Name) VALUES
 	('Ingeniería'),
@@ -56,6 +8,60 @@ INSERT INTO Faculty (Name) VALUES
 	('Ciencias Naturales'),
 	('Ciencias de la Salud'),
 	('Sede Vallenar');
+
+-- Insert Careers, this probabily won't change in a long tiem
+INSERT INTO Career (idFaculty, name) VALUES
+	(2, 'Medicina'),
+	(7, 'Enfermería'),
+	(7, 'Kinesiología'),
+	(7, 'Nutrición y Dietética'),
+	(7, 'Obstetricia y Puericultura'),
+	(3, 'Licenciatura en Educación y Pedagogía en Educación General Básica'),
+	(3, 'Licenciatura en Educación y Pedagogía en Educación Física'),
+	(3, 'Licenciatura en Educación y Pedagogía en Inglés'),
+	(3, 'Licenciatura en Educación y Pedagogía en Educación Parvularia'),
+	(3, 'Psicología'),
+	(3, 'Traductología e Interprete Inglés-Español'),
+	(4, 'Construcción Civil'),
+	(1, 'Comercial'),
+	(1, 'Geología'),
+	(1, 'Industrial'),
+	(1, 'Informática y Computación'),
+	(1, 'Metalurgia'),
+	(1, 'Minas'),
+	(5, 'Derecho'),
+	(5, 'Trabajo Social'),
+	(4, 'Técnico Universitario en Administración de Empresas'),
+	(8, 'Técnico Universitario Asistente de Geología'),
+	(NULL, 'Técnico Universitario en Energías Renovables y Eficiencia Energética'),
+	(8, 'Técnico Universitario en Prevención de Riesgos'),
+	(4, 'Técnico Universitario Auditor Contable y Tributario'),
+	(4, 'Técnico Universitario en Automatización Industrial'),
+	(4, 'Técnico Universitario en Mantención Mecánica de Equipos Industriales'),
+	(4, 'Técnico Universitario en Metalurgia'),
+	(4, 'Técnico Universitario en Minas'),
+	(4, 'Técnico Universitario en Electricidad'),
+	(NULL, 'Técnico Universitario en Asistencia Judicial'),
+	(8, 'Técnico Universitario en Administración de Empresas'),
+	(8, 'Técnico Universitario en Automatización Industrial'),
+	(8, 'Técnico Universitario en Metalurgia'),
+	(8, 'Técnico Universitario en Minas'),
+	(8, 'Técnico Universitario en Mantención Mecánica de Equipos Industriales');
+
+-- Insert Admin and associated users to allow login
+INSERT INTO Users (id, idFaculty, rut, username, passwordHash, role) VALUES 
+	(1, 1, 0, 'root', '$2b$10$g2XXnVqwA9Y6uG5uPS/V8.yoN87JF631hfYtPfsVCTWTasK6Z0yAm', 0),
+	(2, NULL, 1, 'admin', '$2b$10$GqHscCe39BShFggVZDe8B.FNc8KYdUvYRd9jHHHvCuPgLsUftXGiq', 1),
+	(3, 1, 15871295, 'Andrés Alfaro', '$2b$10$uvL9tkSFROnHMm1FGXuHKuPMljsc3LpmGY4Sd.t15vztAs7ds.daa', 3),
+	(4, 1, 15886024, 'Servando Campillay', '$2b$10$76iREZOmqqJf.fMszULzeez2Ighq810WptvqkzvLKWdUkZX6WGVja', 4),
+	(5, 1, 12065689, 'Vladimir Riffo', '$2b$10$zN4MaM5h7JL0QYh9epsV3eP9tSqyhjasoLGPB1ZTAaOFs7ea4GseC', 4),
+	(6, 1, 13015354, 'Héctor Córnide', '$2b$10$QEvrTQT93SmTRtZK6UmEmuOST2007NceoVmsFetMsA.zo7SOTttKO', 4),
+	(7, 1, 8368745, 'Manuel Monasterio', '$2b$10$TO4bL6ic/MCCFJS9SJVB1eV/RTI7nT4EVBk2wHoqsgFJX6fCpsmpG', 4),
+	(8, 1, 9870893, 'Wilson Castillo', '$2b$10$8xhtbMd0aiL1sGg.7pev0.uit2XJzZJ.5Tc8MKzj3s0YSPxbIKtDK', 4),
+	(9, 1, 13178495, 'Nahur Meléndez', '$2b$10$xqMns2IbGOLBhd7ldS6qF.6hqyb7SFozT9hb0IOd1GQjaBpvMMWTm', 4),
+	(10, 1, 12939880, 'Jacqueline Manríquez', '$2b$10$oDUoCQH76XUQwZWgieQFnO5HuVLZSqacp2dZNdWUXj7yN0ZoeUp7G', 4),
+	(11, 1, 10198361, 'Dante Carrizo', '$2b$10$/LjlpURkKSkuJb5x53MzWusXB22qRsZj94sZz66BJEcrbWZHDxdrC', 2),
+	(13, 6, 13948010, 'Diego Oyarzún', '$2b$10$hxWqAmn6GWk.I3m6/kJS2.kPbrz0wgkV/IJLI8gI.t69XIKtw/2/.', 3);
 
 INSERT INTO Subject (idCareer, name, semester) VALUES
 	(16, 'Matemática', 101), -- 1
