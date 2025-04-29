@@ -80,7 +80,7 @@ class DB():
         except Exception as e:
             print(e)
         return self
-    def Select(self, table : str, column : str = '', fetch : int = 1, where : str = '', orderBy : int = OrderBy.ASC, orderByColumn : str = ''):
+    def Select(self, table : str, column : str = '', fetch : int = 1, where : str = '', orderBy : OrderBy = OrderBy.ASC, orderByColumn : str = ''):
         try:
             if column == '': column = '*'
             else: column = f'{",".join(column.split(" "))}'
@@ -100,7 +100,8 @@ class DB():
         return None
     def UpdateSet(self, table : str, column : str, values : list, where : str):
         try:
-            if column != '': 
+            data = ''
+            if column != '':
                 data = [f'{j} = {k}' for j, k in zip(column.split(" "), [f'{i}' if not isinstance(i, str) else f'"{i}"' for i in values])]
                 data = f'{",".join(data)}'
             if where != '': where = f'WHERE {",".join(where.split(","))}'
@@ -121,6 +122,6 @@ def Main():
     name = 'udaBibRefs'
     db = DB(database = name)
     #db.InsertTable('Users', 'username,passwordHash,role', ['Jacqueline','$2b$10$GBYNGRJTMjIiRlqW2cH/hOazF2LK9.UdK6tyyNFxnoTrI/iYi32Ky','3'])
-    print(db.Select(table = 'Career', fetch = -1))
+    print(db.Select(table = 'SubjectUser', fetch = -1))
     #db.DropDatabase(name)
 if __name__ == '__main__': Main()
