@@ -3,8 +3,11 @@ CREATE TABLE Book (
     name VARCHAR(256) NOT NULL,
     year SMALLINT,
     edition TINYINT,
+    city VARCHAR(64),
     isbn VARCHAR(13) UNIQUE,
-    issn VARCHAR(8) UNIQUE
+    issn VARCHAR(8) UNIQUE,
+    obligatory BOOLEAN,
+    copies SMALLINT NOT NULL
 );
 
 CREATE TABLE Author (
@@ -16,8 +19,21 @@ CREATE TABLE AuthorBook (
     idAuthor INT NOT NULL,
     idBook INT NOT NULL,
     PRIMARY KEY (idAuthor, idBook),
-    FOREIGN KEY (idAuthor) REFERENCES Author(id),
-    FOREIGN KEY (idBook) REFERENCES Book(id)
+    FOREIGN KEY (idAuthor) REFERENCES Author (id),
+    FOREIGN KEY (idBook) REFERENCES Book (id)
+);
+
+CREATE TABLE City (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(64) NOT NULL
+);
+
+CREATE TABLE CityBook (
+    idCity INT NOT NULL,
+    idBook INT NOT NULL,
+    PRIMARY KEY (idCity, idBook),
+    FOREIGN KEY (idCity) REFERENCES City (id),
+    FOREIGN KEY (idBook) REFERENCES Book (id)
 );
 
 CREATE TABLE Faculty (
@@ -29,7 +45,7 @@ CREATE TABLE Career (
     id INT AUTO_INCREMENT PRIMARY KEY,
     idFaculty INT,
     name VARCHAR(128) NOT NULL,
-    FOREIGN KEY (idFaculty) REFERENCES Faculty(id)
+    FOREIGN KEY (idFaculty) REFERENCES Faculty (id)
 );
 
 CREATE TABLE Subject (
@@ -37,7 +53,7 @@ CREATE TABLE Subject (
     idCareer INT,
     name VARCHAR(128),
     semester SMALLINT,
-    FOREIGN KEY (idCareer) REFERENCES Career(id)
+    FOREIGN KEY (idCareer) REFERENCES Career (id)
 );
 
 CREATE TABLE SubjectBook (
@@ -47,8 +63,8 @@ CREATE TABLE SubjectBook (
     semester TINYINT,
     obligatory BOOLEAN,
     PRIMARY KEY (idBook, idSubject),
-    FOREIGN KEY (idBook) REFERENCES Book(id),
-    FOREIGN KEY (idSubject) REFERENCES Subject(id)
+    FOREIGN KEY (idBook) REFERENCES Book (id),
+    FOREIGN KEY (idSubject) REFERENCES Subject (id)
 );
 
 CREATE TABLE Theme (
@@ -60,15 +76,15 @@ CREATE TABLE ThemeBook (
     idBook INT NOT NULL,
     idTheme INT NOT NULL,
     PRIMARY KEY (idBook, idTheme),
-    FOREIGN KEY (idBook) REFERENCES Book(id),
-    FOREIGN KEY (idTheme) REFERENCES Theme(id)
+    FOREIGN KEY (idBook) REFERENCES Book (id),
+    FOREIGN KEY (idTheme) REFERENCES Theme (id)
 );
 
 CREATE TABLE LinkSource (
     id INT AUTO_INCREMENT PRIMARY KEY,
     idBook INT NOT NULL,
     linkSource TEXT NOT NULL,
-    FOREIGN KEY (idBook) REFERENCES Book(id)
+    FOREIGN KEY (idBook) REFERENCES Book (id)
 );
 
 CREATE TABLE Editorial (
@@ -80,31 +96,29 @@ CREATE TABLE EditorialBook (
     idBook INT NOT NULL,
     idEditorial INT NOT NULL,
     PRIMARY KEY (idBook, idEditorial),
-    FOREIGN KEY (idBook) REFERENCES Book(id),
-    FOREIGN KEY (idEditorial) REFERENCES Editorial(id)
+    FOREIGN KEY (idBook) REFERENCES Book (id),
+    FOREIGN KEY (idEditorial) REFERENCES Editorial (id)
 );
 
-CREATE TABLE NroBib (
-    nroBib INT PRIMARY KEY,
-    copias SMALLINT NOT NULL
-);
+CREATE TABLE NroBib (id INT AUTO_INCREMENT PRIMARY KEY, nroBib INT);
 
 CREATE TABLE NroBibBook (
     idBook INT NOT NULL,
-    nroBib INT NOT NULL,
-    PRIMARY KEY (idBook, nroBib),
-    FOREIGN KEY (idBook) REFERENCES Book(id),
-    FOREIGN KEY (nroBib) REFERENCES NroBib(nroBib)
+    idNroBib INT NOT NULL,
+    PRIMARY KEY (idBook, idNroBib),
+    FOREIGN KEY (idBook) REFERENCES Book (id),
+    FOREIGN KEY (idNroBib) REFERENCES NroBib (id)
 );
 
 CREATE TABLE Users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     idFaculty INT,
+    idCareer INT,
     rut INT UNIQUE NOT NULL,
     username VARCHAR(64) NOT NULL,
     passwordHash VARCHAR(256) NOT NULL, -- Store hashed passwords, not plaintext
     role TINYINT NOT NULL,
-    FOREIGN KEY (idFaculty) REFERENCES Faculty(id)
+    FOREIGN KEY (idFaculty) REFERENCES Faculty (id)
 );
 
 CREATE TABLE SubjectUser (
@@ -113,6 +127,6 @@ CREATE TABLE SubjectUser (
     year SMALLINT,
     semester TINYINT,
     PRIMARY KEY (idUser, idSubject),
-    FOREIGN KEY (idUser) REFERENCES Users(id),
-    FOREIGN KEY (idSubject) REFERENCES Subject(id)
+    FOREIGN KEY (idUser) REFERENCES Users (id),
+    FOREIGN KEY (idSubject) REFERENCES Subject (id)
 );

@@ -34,12 +34,12 @@ class DB():
                 self.cursor = self.connection.cursor()
                 print('Connected Succesfully!')
                 #Create DB tables and load stuff
-                with open('db.sql') as dbData:
+                with open('../dbt/scripts/db.sql') as dbData:
                     for command in dbData.read().split(';'):
                         if command.strip() != '':
                             print(f'Executing:\n{command}')
                             self.cursor.execute(command)
-                with open('insert.sql') as dbData:
+                with open('../dbt/scripts/insert2.sql') as dbData:
                     for command in dbData.read().split(';'):
                         if command.strip() != '':
                             print(f'Executing:\n{command}')
@@ -122,6 +122,7 @@ def Main():
     name = 'udaBibRefs'
     db = DB(database = name)
     #db.InsertTable('Users', 'username,passwordHash,role', ['Jacqueline','$2b$10$GBYNGRJTMjIiRlqW2cH/hOazF2LK9.UdK6tyyNFxnoTrI/iYi32Ky','3'])
-    print(db.Select(table = 'SubjectUser', fetch = -1))
+    #db.InsertTable('SubjectUser', 'idUser,idSubject,year,semester', ['2','4','2023','1'])
+    print(db.Select(table = 'Subject', fetch = -1))
     #db.DropDatabase(name)
 if __name__ == '__main__': Main()
