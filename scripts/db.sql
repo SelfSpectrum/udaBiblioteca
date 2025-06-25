@@ -3,10 +3,6 @@ CREATE TABLE Book (
     name VARCHAR(256) NOT NULL,
     year SMALLINT,
     edition TINYINT,
-    city VARCHAR(64),
-    isbn VARCHAR(13) UNIQUE,
-    issn VARCHAR(8) UNIQUE,
-    obligatory BOOLEAN,
     copies SMALLINT NOT NULL
 );
 
@@ -20,19 +16,6 @@ CREATE TABLE AuthorBook (
     idBook INT NOT NULL,
     PRIMARY KEY (idAuthor, idBook),
     FOREIGN KEY (idAuthor) REFERENCES Author (id),
-    FOREIGN KEY (idBook) REFERENCES Book (id)
-);
-
-CREATE TABLE City (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(64) NOT NULL
-);
-
-CREATE TABLE CityBook (
-    idCity INT NOT NULL,
-    idBook INT NOT NULL,
-    PRIMARY KEY (idCity, idBook),
-    FOREIGN KEY (idCity) REFERENCES City (id),
     FOREIGN KEY (idBook) REFERENCES Book (id)
 );
 
@@ -89,7 +72,8 @@ CREATE TABLE LinkSource (
 
 CREATE TABLE Editorial (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(128) NOT NULL
+    name VARCHAR(128) NOT NULL,
+    city VARCHAR(64)
 );
 
 CREATE TABLE EditorialBook (
